@@ -5,30 +5,17 @@ import {
   AiFillLinkedin,
 } from "react-icons/ai";
 
-
 // components
 import { Project } from "../components/Project";
 
 // images
-import vlrhub from '../assets/vlrhub_screen.png'
+import vlrHub from "../assets/vlrhub_screen.png";
+import gowRagnarok from "../assets/gow_screen.png";
 
 const Home = () => {
-  const cursor = useRef(null);
-
-  useEffect(() => {
-    document.addEventListener("mousemove", (e) => {
-      let x = e.pageX;
-      let y = e.pageY;
-
-      cursor.current.style.top = y + "px";
-      cursor.current.style.left = x + "px";
-      cursor.current.style.display = "block";
-    });
-  });
-
   return (
     <div className="homepage-style">
-      <div className="cursor" ref={cursor}></div>
+      <div className="cursor"></div>
       <div className="container">
         <div className="container-first-sec">
           <div className="resume">
@@ -36,7 +23,7 @@ const Home = () => {
             <h3>Desenvolvedor Front-end</h3>
             <p>
               Eu construo projetos estruturados e acessiveis, entregando ótimas
-              experiências para a web.{' '}
+              experiências para a web.{" "}
             </p>
           </div>
           <div className="navegation"></div>
@@ -73,12 +60,9 @@ const Home = () => {
                 tecnologia.
               </p>
               <p>
-                Atualmente, tenho conhecimento em <span>HTML</span>,{' '}
+                Atualmente, tenho conhecimento em <span>HTML</span>,{" "}
                 <span>CSS</span>, <span>JavaScript</span> e <span>Node</span>.
-              </p>
-
-              <p>
-                Estou estudando atualmente <span>React</span> e{' '}
+                Estou estudando atualmente <span>React</span> e{" "}
                 <span>TypeScript</span>.
               </p>
             </div>
@@ -88,9 +72,24 @@ const Home = () => {
               <h1>Projetos</h1>
             </div>
             <div className="list">
-              <Project 
-              name={'Valorant Hub'}
-              desc={'Um website do jogo Valorant, onde pode consultar os agentes do jogo e suas caracteristicas, como também ranks e mapas do jogo, além de suas armas e suas skins.'}/>
+              <Project
+                name={"Valorant Hub"}
+                desc={
+                  "Um website do jogo Valorant, onde pode consultar os agentes do jogo e suas caracteristicas, como também ranks e mapas do jogo, além de suas armas e suas skins."
+                }
+                link={"https://vlrgg.vercel.app/"}
+                image={vlrHub}
+                stacks={["React", "JavaScript"]}
+              />
+              <Project
+                name={"God of War: Ragnarök"}
+                desc={
+                  "Landing Page criada baseada no novo God of War: Ragnarök, com elaboração de carrossel de galeria e com descrições sobre alguns dos principais personagens da saga atual."
+                }
+                link={"https://god-of-war-ragnarok-landing-page.vercel.app/"}
+                image={gowRagnarok}
+                stacks={["HTML", "SCSS", "JavaScript"]}
+              />
             </div>
           </div>
         </div>
