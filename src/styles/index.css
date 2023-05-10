@@ -1,12 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;400;500;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;800&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   list-style-type: none;
   scroll-behavior: smooth;
-  font-family: "Inter", sans-serif;
   text-decoration: none;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
 }
 
 img {
@@ -14,21 +18,32 @@ img {
 }
 
 body {
+  background-color: #0a192f;
   margin: 3rem 2rem;
   background-color: #0a192f;
 }
 body h1,
-body h3 {
-  color: #e6f1ff;
+body h2,
+body h3,
+body h4,
+body h5 {
+  font-family: "Inter", sans-serif;
 }
-body h1::-moz-selection, body h3::-moz-selection {
+body h1::-moz-selection, body h2::-moz-selection, body h3::-moz-selection, body h4::-moz-selection, body h5::-moz-selection {
   background: #64ffda;
   color: #0a192f;
 }
 body h1::selection,
-body h3::selection {
+body h2::selection,
+body h3::selection,
+body h4::selection,
+body h5::selection {
   background: #64ffda;
   color: #0a192f;
+}
+body h1,
+body h3 {
+  color: #e6f1ff;
 }
 body p {
   color: #8892b0;
@@ -50,7 +65,7 @@ body .cursor {
   height: 50px;
   border-radius: 50%;
   pointer-events: none;
-  box-shadow: 0 0 300px 200px #112240, 0 0 200px 50px rgb(91, 159, 241);
+  box-shadow: 0 0 300px 200px #112240, 0 0 200px 10px rgb(91, 159, 241);
   transform: translate(-50%, -50%);
   display: none;
 }

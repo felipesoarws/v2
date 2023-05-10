@@ -90,7 +90,7 @@ const Home = () => {
             <div className="list">
               <Project 
               name={'Valorant Hub'}
-              desc={'Um website do jogo Valorant, onde pode consultar os agentes do jogo e suas caracteristicas, como também ranks e mapas do jogo, além das armas e suas skins.'}/>
+              desc={'Um website do jogo Valorant, onde pode consultar os agentes do jogo e suas caracteristicas, como também ranks e mapas do jogo, além de suas armas e suas skins.'}/>
             </div>
           </div>
         </div>
