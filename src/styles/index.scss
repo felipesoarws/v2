@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;500;700;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;400;500;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;800&display=swap");
 $Navy: #0a192f;
 $Light-Navy: #112240;
 $Lightest-Navy: #233554;
@@ -16,10 +16,35 @@ $Green: #64ffda;
   list-style-type: none;
   scroll-behavior: smooth;
   text-decoration: none;
+
+  html {
+    $scrollbarBG: #bdc1c1;
+    $thumbBG: #030405;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  body::-webkit-scrollbar {
+    width: 13px;
+  }
+  body {
+    scrollbar-width: thin;
+    scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+  }
+  body::-webkit-scrollbar-track {
+    background: var(--scrollbarBG);
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: var(--thumbBG);
+    border-radius: 20px;
+    border: 3px solid var(--scrollbarBG);
+  }
 }
 
 p {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 img {
@@ -47,7 +72,7 @@ body {
   h3,
   h4,
   h5 {
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
 
     &::selection {
       background: $Green;
@@ -65,33 +90,6 @@ body {
     &::selection {
       background: $Green;
       color: $Light-Navy;
-    }
-  }
-
-  .cursor {
-    visibility: hidden;
-    z-index: -1;
-    position: fixed;
-    background-color: $Light-Navy;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    pointer-events: none;
-    box-shadow: 0 0 300px 200px $Light-Navy, 0 0 200px 10px rgb(91, 159, 241);
-    transform: translate(-50%, -50%);
-    display: none;
-
-    @media (min-width: 1024px) {
-      visibility: visible;
-    }
-
-    &::before {
-      content: '';
-      position: absolute;
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      opacity: 0.2;
     }
   }
 
@@ -298,8 +296,8 @@ body {
         }
 
         @media (min-width: 1300px) {
-          width: 60vw;
-          margin-left: 45vw;
+          width: 55vw;
+          margin-left: 42vw;
         }
 
         .title {
@@ -363,15 +361,13 @@ body {
         }
 
         .projects {
-          @media (min-width: 1024px) {
-            height: 100vh;
-          }
+          margin: 4rem 0 2rem 0;
+
           .list {
             display: flex;
             align-items: flex-start;
             justify-content: center;
             flex-direction: column;
-            gap: 3rem;
             transition: all 0.3s ease-in-out;
 
             @media (min-width: 1024px) {
@@ -385,6 +381,8 @@ body {
 
               @media (min-width: 1024px) {
                 padding: 1.5rem;
+                cursor: pointer;
+                z-index: 99999999999;
 
                 &:hover {
                   opacity: 1;
@@ -517,31 +515,78 @@ body {
           }
 
           .all-projects {
-            display: flex;
-            align-items: center;
-            margin: 0.8rem 0;
-            gap: 0.2rem;
-            p,
-            svg {
-              color: white;
-              transition: all 0.3s ease-in-out;
-              cursor: pointer;
-            }
+            margin: 2rem 0;
 
-            p {
-              &:hover + svg {
-                transform: translateX(1rem) rotate(90deg);
-                color: $Green;
+            nav ul li {
+              display: flex;
+              align-items: center;
+              gap: 0.2rem;
+
+              p,
+              svg {
+                color: white;
+                transition: all 0.3s ease-in-out;
+                cursor: pointer;
               }
 
-              &:hover {
-                color: $Green;
+              p {
+                &:hover + svg {
+                  transform: translateX(1rem) rotate(90deg);
+                  color: $Green;
+                }
+
+                &:hover {
+                  color: $Green;
+                }
+              }
+
+              svg {
+                font-size: 1.5rem;
+                transform: rotate(90deg);
               }
             }
+          }
+        }
 
-            svg {
-              font-size: 1.5rem;
-              transform: rotate(90deg);
+        .skills {
+          margin: 2rem 0;
+
+          &-list {
+            .item {
+              padding: 1rem 0 3rem 0;
+              border-bottom: 1px solid rgba($color: $Slate, $alpha: 0.3);
+
+              h2 {
+                font-size: 1.1rem;
+                color: white;
+                letter-spacing: 0px;
+                font-weight: 500;
+                margin: 0.8rem 0;
+              }
+
+              &-list {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                flex-wrap: wrap;
+                gap: 1rem;
+
+                p {
+                  padding: 0.5rem 0.8rem;
+                  border-radius: 1.5rem;
+                  font-size: 0.8rem;
+
+                  &.competent {
+                    background-color: rgb(94 234 212/0.1);
+                    color: $Green;
+                  }
+
+                  &.studying {
+                    color: rgb(0, 80, 255);
+                    background-color: rgb(5, 15, 70);
+                  }
+                }
+              }
             }
           }
         }
