@@ -1,0 +1,26 @@
+[
+  {
+    "year": "2022",
+    "project": "Portifólio (v1)",
+    "builtWith": ["React", "JavaScript", "SCSS"],
+    "link": "v1-felipesoares-dev.vercel.app"
+  },
+  {
+    "year": "2022",
+    "project": "God of War: Ragnarök",
+    "builtWith": ["React", "JavaScript", "SCSS"],
+    "link": "https://god-of-war-ragnarok-landing-page.vercel.app/"
+  },
+  {
+    "year": "2023",
+    "project": "Google Keep - Clone",
+    "builtWith": ["React", "JavaScript", "SCSS"],
+    "link": "https://google-keep-clone-dev.vercel.app/"
+  },
+  {
+    "year": "2022",
+    "project": "Valorant Hub",
+    "builtWith": ["React", "JavaScript", "SCSS"],
+    "link": "https://vlrgg.vercel.app/"
+  }
+]

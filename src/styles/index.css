@@ -7,6 +7,15 @@
   list-style-type: none;
   scroll-behavior: smooth;
   text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+*::-moz-selection {
+  background: #64ffda;
+  color: #0a192f;
+}
+*::selection {
+  background: #64ffda;
+  color: #0a192f;
 }
 * img {
   width: 100%;
@@ -27,9 +36,12 @@
   border: 3px solid var(--scrollbarBG);
 }
 
-p,
-a {
-  font-family: "Poppins", sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Inter", sans-serif;
 }
 
 img {
@@ -55,25 +67,6 @@ body {
   body {
     margin: 4rem 7rem;
   }
-}
-body h1,
-body h2,
-body h3,
-body h4,
-body h5 {
-  font-family: "Inter", sans-serif;
-}
-body h1::-moz-selection, body h2::-moz-selection, body h3::-moz-selection, body h4::-moz-selection, body h5::-moz-selection {
-  background: #64ffda;
-  color: #0a192f;
-}
-body h1::selection,
-body h2::selection,
-body h3::selection,
-body h4::selection,
-body h5::selection {
-  background: #64ffda;
-  color: #0a192f;
 }
 body h1,
 body h3 {

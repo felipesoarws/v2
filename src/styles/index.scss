@@ -17,6 +17,12 @@ $Light-Blue: rgba(29, 78, 216, 0.1);
   list-style-type: none;
   scroll-behavior: smooth;
   text-decoration: none;
+  font-family: "Poppins", sans-serif;
+
+  &::selection {
+    background: $Green;
+    color: $Navy;
+  }
 
   html {
     $scrollbarBG: transparent;
@@ -44,9 +50,12 @@ $Light-Blue: rgba(29, 78, 216, 0.1);
   }
 }
 
-p,
-a {
-  font-family: "Poppins", sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Inter", sans-serif;
 }
 
 img {
@@ -69,19 +78,6 @@ body {
 
   @media (min-width: 1366px) {
     margin: 4rem 7rem;
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5 {
-    font-family: "Inter", sans-serif;
-
-    &::selection {
-      background: $Green;
-      color: $Navy;
-    }
   }
 
   h1,
