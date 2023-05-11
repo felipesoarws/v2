@@ -8,6 +8,7 @@ $Light-Slate: #a8b2d1;
 $Lightest-Slate: #ccd6f6;
 $White: #e6f1ff;
 $Green: #64ffda;
+$Light-Blue: rgba(29, 78, 216, 0.15);
 
 * {
   margin: 0;
@@ -18,8 +19,8 @@ $Green: #64ffda;
   text-decoration: none;
 
   html {
-    $scrollbarBG: #bdc1c1;
-    $thumbBG: #030405;
+    $scrollbarBG: transparent;
+    $thumbBG: $Navy;
   }
 
   img {
@@ -43,7 +44,8 @@ $Green: #64ffda;
   }
 }
 
-p {
+p,
+a {
   font-family: "Poppins", sans-serif;
 }
 
@@ -54,6 +56,8 @@ img {
 body {
   margin: 3rem 2rem;
   background-color: $Navy;
+
+  position: relative;
 
   @media (min-width: 768px) {
     margin: 4rem;
@@ -100,9 +104,20 @@ body {
       justify-content: flex-start;
       flex-direction: column;
       gap: 4rem;
+      position: relative;
 
       @media (min-width: 1024px) {
         flex-direction: row;
+      }
+
+      .detail.container {
+        width: 1px;
+        height: 1px;
+        border-radius: 50%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        box-shadow: 0 0 300px 300px $Light-Blue;
       }
 
       &-first-sec {
@@ -268,17 +283,35 @@ body {
 
         .social-medias {
           display: flex;
-          align-items: center;
+          align-items: flex-start;
           justify-content: center;
+          flex-direction: column;
           gap: 1rem;
 
-          svg {
-            font-size: 1.8rem;
+          .icons {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+
+            svg {
+              font-size: 1.8rem;
+              color: $Slate;
+              transition: all 0.3s ease-in-out;
+
+              &:hover {
+                color: $Green;
+              }
+            }
+          }
+
+          a {
+            text-decoration: none;
             color: $Slate;
             transition: all 0.3s ease-in-out;
 
             &:hover {
-              color: $White;
+              color: $Green;
             }
           }
         }
@@ -362,6 +395,17 @@ body {
 
         .projects {
           margin: 4rem 0 2rem 0;
+          overflow: hidden;
+
+          .detail.projects {
+            width: 1px;
+            height: 1px;
+            border-radius: 100%;
+            position: absolute;
+            top: 90vh;
+            right: 15vw;
+            box-shadow: 0 0 300px 300px $Light-Blue;
+          }
 
           .list {
             display: flex;
@@ -369,11 +413,14 @@ body {
             justify-content: center;
             flex-direction: column;
             transition: all 0.3s ease-in-out;
+            gap: 3rem;
 
             @media (min-width: 1024px) {
               &:hover > .project {
                 opacity: 0.3;
               }
+
+              gap: 0rem;
             }
 
             .project {
@@ -550,6 +597,17 @@ body {
 
         .skills {
           margin: 2rem 0;
+          position: relative;
+
+          .detail.skills {
+            width: 1px;
+            height: 1px;
+            border-radius: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            box-shadow: 0 0 300px 300px $Light-Blue;
+          }
 
           &-list {
             .item {

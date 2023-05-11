@@ -23,7 +23,6 @@ const Home = () => {
   const aboutNavItem = useRef(null);
   const projectsNavItem = useRef(null);
   const skillsNavItem = useRef(null);
-  const contactNavItem = useRef(null);
 
   const toggleNavClass = (text) => {
     if (text == "about") {
@@ -36,27 +35,23 @@ const Home = () => {
         projectsNavItem.current.classList.add("actived");
         aboutNavItem.current.classList.remove("actived");
         skillsNavItem.current.classList.remove("actived");
-        contactNavItem.current.classList.remove("actived");
         break;
       case "about":
         projectsNavItem.current.classList.remove("actived");
         aboutNavItem.current.classList.add("actived");
         skillsNavItem.current.classList.remove("actived");
-        contactNavItem.current.classList.remove("actived");
 
         break;
       case "skills":
         projectsNavItem.current.classList.remove("actived");
         aboutNavItem.current.classList.remove("actived");
         skillsNavItem.current.classList.add("actived");
-        contactNavItem.current.classList.remove("actived");
 
         break;
       case "contact":
         projectsNavItem.current.classList.remove("actived");
         aboutNavItem.current.classList.remove("actived");
         skillsNavItem.current.classList.remove("actived");
-        contactNavItem.current.classList.add("actived");
         break;
 
       default:
@@ -67,6 +62,7 @@ const Home = () => {
   return (
     <div className="homepage-style">
       <div className="container">
+        <div className="detail container"></div>
         <div className="container-first-sec">
           <div className="resume">
             <h1>Felipe Soares</h1>
@@ -95,23 +91,23 @@ const Home = () => {
                 <span></span>
               </a>
             </div>
-            <div className="navegation-item" ref={contactNavItem}>
-              <a href="#contact" onClick={() => toggleNavClass("contact")}>
-                <h1>Contato</h1>
-                <span></span>
-              </a>
-            </div>
           </div>
           <div className="social-medias">
-            <a href="https://github.com/felipesoarws" target="_blank">
-              <AiOutlineGithub />
-            </a>
-            <a href="https://www.instagram.com/felipesoarws/" target="_blank">
-              <AiOutlineInstagram />
-            </a>
-            <a href="https://www.linkedin.com/in/felipesoarws/" target="_blank">
-              <AiFillLinkedin />
-            </a>
+            <div className="icons">
+              <a href="https://github.com/felipesoarws" target="_blank">
+                <AiOutlineGithub />
+              </a>
+              <a href="https://www.instagram.com/felipesoarws/" target="_blank">
+                <AiOutlineInstagram />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/felipesoarws/"
+                target="_blank"
+              >
+                <AiFillLinkedin />
+              </a>
+            </div>
+            <a href="mailto:felipesoarwz@gmail.com">felipesoarwz@gmail.com</a>
           </div>
         </div>
         <div className="container-second-sec">
@@ -143,6 +139,7 @@ const Home = () => {
             </div>
           </div>
           <div className="projects">
+            <div className="detail projects"></div>
             <div className="title">
               <h1>Projetos</h1>
             </div>
@@ -201,6 +198,8 @@ const Home = () => {
             </div>
           </div>
           <div className="skills">
+            <div className="detail skills"></div>
+
             <div className="title">
               <h1>Skills</h1>
             </div>
@@ -241,7 +240,7 @@ const Home = () => {
               />
               <ItemSkill
                 stack={"Estudando atualmente"}
-                skills={["TypeScript", "React", "NestJS"]}
+                skills={["TypeScript", "ReactJS", "NestJS"]}
                 skillProgress={"studying"}
               />
             </div>
