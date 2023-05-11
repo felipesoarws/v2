@@ -114,13 +114,13 @@ body {
         width: 1px;
         height: 1px;
         border-radius: 50%;
-        position: fixed;
+        position: absolute;
         top: 0;
         left: 0;
         box-shadow: 0 0 300px 300px $Light-Blue;
 
         @media (min-width: 1024px) {
-          position: absolute;
+          position: fixed;
         }
       }
 
