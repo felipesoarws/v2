@@ -28,6 +28,10 @@ h5 {
 }
 
 .projects-style {
+  @media (min-width: 1440px) {
+    margin: 7rem 8rem;
+  }
+
   h1 {
     font-size: 1.8rem;
 
@@ -87,7 +91,7 @@ h5 {
 
               @media (min-width: 768px) {
                 visibility: visible;
-                display: block;
+                display: table-cell;
               }
             }
 
@@ -95,9 +99,17 @@ h5 {
               visibility: hidden;
               display: none;
 
+              p {
+                color: $Green;
+                padding: 0.5rem 0.8rem;
+                border-radius: 1.5rem;
+                font-size: 0.8rem;
+                background-color: rgb(94 234 212/0.1);
+              }
+
               @media (min-width: 1024px) {
                 visibility: visible;
-                display: block;
+                display: table-cell;
               }
             }
           }
@@ -169,7 +181,7 @@ h5 {
 
             @media (min-width: 768px) {
               visibility: visible;
-              display: block;
+              display: table-cell;
 
               a {
                 display: flex;
@@ -216,9 +228,24 @@ h5 {
             visibility: hidden;
             display: none;
 
+            .item {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              gap: 1rem;
+
+              p {
+                color: $Green;
+                padding: 0.5rem 0.8rem;
+                border-radius: 1.5rem;
+                font-size: 0.7rem;
+                background-color: rgb(94 234 212/0.1);
+              }
+            }
+
             @media (min-width: 1024px) {
               visibility: visible;
-              display: flex;
+              display: table-cell;
             }
           }
         }

@@ -22,5 +22,11 @@
     "project": "Valorant Hub",
     "builtWith": ["React", "JavaScript", "SCSS"],
     "link": "vlrgg.vercel.app"
+  },
+  {
+    "year": "2023",
+    "project": "Controle de Despesas",
+    "builtWith": ["HTML", "JavaScript", "SCSS"],
+    "link": "controle-de-despesas-rust.vercel.app"
   }
 ]

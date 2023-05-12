@@ -1,23 +1,23 @@
-import { useEffect, useRef, useState } from "react";
-import { Link } from "react-router-dom";
+import { useEffect, useRef, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 import {
   AiOutlineGithub,
   AiOutlineInstagram,
   AiFillLinkedin,
-} from "react-icons/ai";
+} from 'react-icons/ai';
 
-import { BsArrowUpShort } from "react-icons/bs";
+import { BsArrowUpShort } from 'react-icons/bs';
 
 // components
-import { Project } from "../components/Project";
-import { ItemSkill } from "../components/ItemSkill";
+import { Project } from '../components/Project';
+import { ItemSkill } from '../components/ItemSkill';
 
 // images
-import vlrHub from "../assets/vlrhub_screen.png";
-import gowRagnarok from "../assets/gow_screen.png";
-import googleKeepClone from "../assets/google_keep_screen.png";
-import v1Portifolio from "../assets/v1_portifolio_screen.png";
+import vlrHub from '../assets/vlrhub_screen.png';
+import gowRagnarok from '../assets/gow_screen.png';
+import googleKeepClone from '../assets/google_keep_screen.png';
+import v1Portifolio from '../assets/v1_portifolio_screen.png';
 
 const Home = () => {
   const aboutNavItem = useRef(null);
@@ -25,33 +25,33 @@ const Home = () => {
   const skillsNavItem = useRef(null);
 
   const toggleNavClass = (text) => {
-    if (text == "about") {
+    if (text == 'about') {
       document.body.scrollTop = 0;
       document.documentElement.scrollTop = 0;
     }
 
     switch (text) {
-      case "projects":
-        projectsNavItem.current.classList.add("actived");
-        aboutNavItem.current.classList.remove("actived");
-        skillsNavItem.current.classList.remove("actived");
+      case 'projects':
+        projectsNavItem.current.classList.add('actived');
+        aboutNavItem.current.classList.remove('actived');
+        skillsNavItem.current.classList.remove('actived');
         break;
-      case "about":
-        projectsNavItem.current.classList.remove("actived");
-        aboutNavItem.current.classList.add("actived");
-        skillsNavItem.current.classList.remove("actived");
+      case 'about':
+        projectsNavItem.current.classList.remove('actived');
+        aboutNavItem.current.classList.add('actived');
+        skillsNavItem.current.classList.remove('actived');
 
         break;
-      case "skills":
-        projectsNavItem.current.classList.remove("actived");
-        aboutNavItem.current.classList.remove("actived");
-        skillsNavItem.current.classList.add("actived");
+      case 'skills':
+        projectsNavItem.current.classList.remove('actived');
+        aboutNavItem.current.classList.remove('actived');
+        skillsNavItem.current.classList.add('actived');
 
         break;
-      case "contact":
-        projectsNavItem.current.classList.remove("actived");
-        aboutNavItem.current.classList.remove("actived");
-        skillsNavItem.current.classList.remove("actived");
+      case 'contact':
+        projectsNavItem.current.classList.remove('actived');
+        aboutNavItem.current.classList.remove('actived');
+        skillsNavItem.current.classList.remove('actived');
         break;
 
       default:
@@ -74,19 +74,19 @@ const Home = () => {
           </div>
           <div className="navegation">
             <div className="navegation-item actived" ref={aboutNavItem}>
-              <a href="#" onClick={() => toggleNavClass("about")}>
+              <a href="#" onClick={() => toggleNavClass('about')}>
                 <h1>Sobre</h1>
                 <span></span>
               </a>
             </div>
             <div className="navegation-item" ref={projectsNavItem}>
-              <a href="#projects" onClick={() => toggleNavClass("projects")}>
+              <a href="#projects" onClick={() => toggleNavClass('projects')}>
                 <h1>Projetos</h1>
                 <span></span>
               </a>
             </div>
             <div className="navegation-item" ref={skillsNavItem}>
-              <a href="#skills" onClick={() => toggleNavClass("skills")}>
+              <a href="#skills" onClick={() => toggleNavClass('skills')}>
                 <h1>Skills</h1>
                 <span></span>
               </a>
@@ -131,7 +131,7 @@ const Home = () => {
                 tecnologia.
               </p>
               <p>
-                Contenho conhecimento em <span>HTML</span>, <span>CSS</span>,{" "}
+                Contenho conhecimento em <span>HTML</span>, <span>CSS</span>,{' '}
                 <span>JavaScript</span> e <span>Node</span>. Atualmente estou
                 estudando
                 <span> React</span> e <span>TypeScript</span>.
@@ -144,43 +144,35 @@ const Home = () => {
               <h1>Projetos</h1>
             </div>
             <div className="list">
-              <span id="projects" style={{ visibility: "hidden" }}></span>
+              <span id="projects" style={{ visibility: 'hidden' }}></span>
 
               <Project
-                name={"Valorant Hub"}
+                name={'Valorant Hub'}
                 desc={
-                  "Um website do jogo Valorant, onde pode consultar os agentes do jogo e suas caracteristicas, como também ranks e mapas do jogo, além de suas armas e suas skins."
+                  'Um website do jogo Valorant, onde pode consultar os agentes do jogo e suas caracteristicas, como também ranks e mapas do jogo, além de suas armas e suas skins.'
                 }
-                link={"https://vlrgg.vercel.app/"}
+                link={'https://vlrgg.vercel.app/'}
                 image={vlrHub}
-                stacks={["React", "SCSS", "JavaScript"]}
+                stacks={['React', 'SCSS', 'JavaScript']}
               />
               <Project
-                name={"God of War: Ragnarök"}
+                name={'God of War: Ragnarök'}
                 desc={
-                  "Landing Page criada baseada no novo God of War: Ragnarök, com elaboração de carrossel de galeria e com descrições sobre alguns dos principais personagens da saga atual."
+                  'Landing Page criada baseada no novo God of War: Ragnarök, com elaboração de carrossel de galeria e com descrições sobre alguns dos principais personagens da saga atual.'
                 }
-                link={"https://god-of-war-ragnarok-landing-page.vercel.app/"}
+                link={'https://god-of-war-ragnarok-landing-page.vercel.app/'}
                 image={gowRagnarok}
-                stacks={["HTML", "SCSS", "JavaScript"]}
+                stacks={['HTML', 'SCSS', 'JavaScript']}
               />
+
               <Project
-                name={"Google Keep - Clone"}
+                name={'Portifólio (v1)'}
                 desc={
-                  "Clone criado do site Google Keep, onde é possivel a criação de notas e listas, podendo personalizar, priorizar e finalizar tarefas feitas"
+                  'Primeira versão do meu portifólio criado em 2022, baseando-se em uma interface de Mac.'
                 }
-                link={"https://google-keep-clone-dev.vercel.app/"}
-                image={googleKeepClone}
-                stacks={["React", "SCSS", "JavaScript"]}
-              />
-              <Project
-                name={"Portifólio (v1)"}
-                desc={
-                  "Primeira versão do meu portifólio criado em 2022, baseando-se em uma interface de Mac."
-                }
-                link={"https://v1-felipesoares-dev.vercel.app/"}
+                link={'https://v1-felipesoares-dev.vercel.app/'}
                 image={v1Portifolio}
-                stacks={["React", "SCSS", "JavaScript"]}
+                stacks={['React', 'SCSS', 'JavaScript']}
               />
 
               <div className="all-projects">
@@ -204,44 +196,44 @@ const Home = () => {
               <h1>Skills</h1>
             </div>
             <div className="skills-list">
-              <span id="skills" style={{ visibility: "hidden" }}></span>
+              <span id="skills" style={{ visibility: 'hidden' }}></span>
               <ItemSkill
-                stack={"Front-end"}
+                stack={'Front-end'}
                 skills={[
-                  "HTML",
-                  "CSS",
-                  "SCSS",
-                  "JavaScript",
-                  "ReactJS",
-                  "ViteJS",
+                  'HTML',
+                  'CSS',
+                  'SCSS',
+                  'JavaScript',
+                  'ReactJS',
+                  'ViteJS',
                 ]}
-                skillProgress={"competent"}
+                skillProgress={'competent'}
               />
               <ItemSkill
-                stack={"Back-end"}
-                skills={["NodeJS"]}
-                skillProgress={"competent"}
+                stack={'Back-end'}
+                skills={['NodeJS']}
+                skillProgress={'competent'}
               />
               <ItemSkill
-                stack={"Marketing"}
+                stack={'Marketing'}
                 skills={[
-                  "SEO",
-                  "Google ADS",
-                  "Analytics",
-                  "Google Tag Manager",
-                  "SharpSpring",
+                  'SEO',
+                  'Google ADS',
+                  'Analytics',
+                  'Google Tag Manager',
+                  'SharpSpring',
                 ]}
-                skillProgress={"competent"}
+                skillProgress={'competent'}
               />
               <ItemSkill
-                stack={"Linguagens"}
-                skills={["Inglês Intermediário"]}
-                skillProgress={"competent"}
+                stack={'Linguagens'}
+                skills={['Inglês Intermediário']}
+                skillProgress={'competent'}
               />
               <ItemSkill
-                stack={"Estudando atualmente"}
-                skills={["TypeScript", "ReactJS", "NestJS"]}
-                skillProgress={"studying"}
+                stack={'Estudando atualmente'}
+                skills={['TypeScript', 'ReactJS', 'NestJS']}
+                skillProgress={'studying'}
               />
             </div>
           </div>

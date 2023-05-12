@@ -19,6 +19,11 @@ h5 {
   font-family: "Inter", sans-serif;
 }
 
+@media (min-width: 1440px) {
+  .projects-style {
+    margin: 7rem 8rem;
+  }
+}
 .projects-style h1 {
   font-size: 1.8rem;
 }
@@ -74,17 +79,24 @@ h5 {
 @media (min-width: 768px) {
   .projects-style .table table thead tr th.links {
     visibility: visible;
-    display: block;
+    display: table-cell;
   }
 }
 .projects-style .table table thead tr th.stacks {
   visibility: hidden;
   display: none;
 }
+.projects-style .table table thead tr th.stacks p {
+  color: #64ffda;
+  padding: 0.5rem 0.8rem;
+  border-radius: 1.5rem;
+  font-size: 0.8rem;
+  background-color: rgba(94, 234, 212, 0.1);
+}
 @media (min-width: 1024px) {
   .projects-style .table table thead tr th.stacks {
     visibility: visible;
-    display: block;
+    display: table-cell;
   }
 }
 .projects-style .table table tbody tr {
@@ -148,7 +160,7 @@ h5 {
 @media (min-width: 768px) {
   .projects-style .table table tbody tr td.links {
     visibility: visible;
-    display: block;
+    display: table-cell;
   }
   .projects-style .table table tbody tr td.links a {
     display: flex;
@@ -194,9 +206,22 @@ h5 {
   visibility: hidden;
   display: none;
 }
+.projects-style .table table tbody tr td.stacks .item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.projects-style .table table tbody tr td.stacks .item p {
+  color: #64ffda;
+  padding: 0.5rem 0.8rem;
+  border-radius: 1.5rem;
+  font-size: 0.7rem;
+  background-color: rgba(94, 234, 212, 0.1);
+}
 @media (min-width: 1024px) {
   .projects-style .table table tbody tr td.stacks {
     visibility: visible;
-    display: flex;
+    display: table-cell;
   }
 }/*# sourceMappingURL=projects.css.map */

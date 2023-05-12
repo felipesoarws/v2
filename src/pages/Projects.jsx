@@ -1,15 +1,15 @@
 import { Link } from 'react-router-dom';
 import * as React from 'react';
-import { useState } from 'react';
 
 // styles
 import './styles/projects.css';
+
+//imports
 import projectsData from './data/projectsData.json';
 
 // icons
 import { BsArrowUpShort } from 'react-icons/bs';
 
-//imports
 const Projects = () => {
   projectsData.sort((a, b) => {
     if (a.year < b.year) {
@@ -38,8 +38,8 @@ const Projects = () => {
             <tr>
               <th className="year">Ano</th>
               <th className="project">Nome do Projeto</th>
-              <th className="links">Link</th>
               <th className="stacks">Feito com</th>
+              <th className="links">Link</th>
             </tr>
           </thead>
           <tbody>
@@ -54,14 +54,18 @@ const Projects = () => {
                     <BsArrowUpShort />
                   </a>
                 </td>
+                <td className="stacks">
+                  <div className="item">
+                    {data.builtWith.map((stack, idx) => (
+                      <p key={idx}>{stack}</p>
+                    ))}
+                  </div>
+                </td>
                 <td className="links">
                   <a target="_blank" href={`https://${data.link}`}>
                     <p>{data.link}</p>
                     <BsArrowUpShort />
                   </a>
-                </td>
-                <td className="stacks">
-                  <p>{data.builtWith}</p>
                 </td>
               </tr>
             ))}
