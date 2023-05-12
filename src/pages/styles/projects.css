@@ -22,6 +22,11 @@ h5 {
 .projects-style h1 {
   font-size: 1.8rem;
 }
+@media (min-width: 768px) {
+  .projects-style h1 {
+    font-size: 3rem;
+  }
+}
 .projects-style .back-menu {
   display: flex;
   align-items: center;
@@ -32,12 +37,15 @@ h5 {
   width: 17rem;
 }
 .projects-style .back-menu:hover > svg {
-  transform: rotate(-90deg) translateY(-1rem);
+  transform: rotate(-90deg) translateY(-0.5rem);
 }
 .projects-style .back-menu svg {
-  font-size: 2rem;
+  font-size: 1rem;
   transform: rotate(-90deg) translateX(0rem);
   transition: all 0.3s ease-in-out;
+}
+.projects-style .back-menu h2 {
+  font-size: 1rem;
 }
 .projects-style .back-menu h2,
 .projects-style .back-menu svg {
@@ -55,13 +63,29 @@ h5 {
 }
 .projects-style .table table thead tr th {
   padding: 0.7rem 1rem;
-  color: #ccd6f6;
+  color: #e2e8f0;
   font-weight: 500;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
-.projects-style .table table thead tr th.builtWith, .projects-style .table table thead tr th.link {
-  display: none;
+.projects-style .table table thead tr th.links {
   visibility: hidden;
+  display: none;
+}
+@media (min-width: 768px) {
+  .projects-style .table table thead tr th.links {
+    visibility: visible;
+    display: block;
+  }
+}
+.projects-style .table table thead tr th.stacks {
+  visibility: hidden;
+  display: none;
+}
+@media (min-width: 1024px) {
+  .projects-style .table table thead tr th.stacks {
+    visibility: visible;
+    display: block;
+  }
 }
 .projects-style .table table tbody tr {
   border-bottom: 0.5px solid rgba(34, 44, 65, 0.9);
@@ -71,7 +95,7 @@ h5 {
 }
 .projects-style .table table tbody tr td {
   padding: 0.8rem 1rem;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 .projects-style .table table tbody tr td.year {
   color: #8892b0;
@@ -81,16 +105,28 @@ h5 {
   align-items: center;
   justify-content: flex-start;
   cursor: pointer;
+  font-size: 0.9rem;
+}
+@media (min-width: 768px) {
+  .projects-style .table table tbody tr td.project a {
+    pointer-events: none;
+  }
 }
 .projects-style .table table tbody tr td.project a svg {
   transform: translate(-3px, 3px) rotate(45deg);
   margin: 0 0.5rem;
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: white;
   text-transform: none;
   letter-spacing: 0px;
   font-weight: 500;
   transition: all 0.3s ease-in-out;
+}
+@media (min-width: 768px) {
+  .projects-style .table table tbody tr td.project a svg {
+    display: none;
+    visibility: hidden;
+  }
 }
 .projects-style .table table tbody tr td.project a p {
   color: white;
@@ -105,7 +141,62 @@ h5 {
   transform: translate(3px, -3px) rotate(45deg);
   color: #64ffda;
 }
-.projects-style .table table tbody tr td.builtWith, .projects-style .table table tbody tr td.link {
-  display: none;
+.projects-style .table table tbody tr td.links {
   visibility: hidden;
+  display: none;
+}
+@media (min-width: 768px) {
+  .projects-style .table table tbody tr td.links {
+    visibility: visible;
+    display: block;
+  }
+  .projects-style .table table tbody tr td.links a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+    font-size: 0.8rem;
+    pointer-events: none;
+  }
+}
+@media (min-width: 768px) and (min-width: 768px) {
+  .projects-style .table table tbody tr td.links a {
+    pointer-events: all;
+  }
+}
+@media (min-width: 768px) {
+  .projects-style .table table tbody tr td.links a svg {
+    transform: translate(-3px, 3px) rotate(45deg);
+    margin: 0 0.5rem;
+    font-size: 1rem;
+    color: #94a3bb;
+    text-transform: none;
+    letter-spacing: 0px;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+  }
+}
+@media (min-width: 768px) {
+  .projects-style .table table tbody tr td.links a p {
+    font-size: 0.8rem;
+    color: #94a3bb;
+    transition: all 0.3s ease-in-out;
+  }
+  .projects-style .table table tbody tr td.links a p:hover {
+    color: #64ffda;
+  }
+  .projects-style .table table tbody tr td.links a p:hover + svg {
+    color: #64ffda;
+    transform: translate(1px, -1px) rotate(45deg);
+  }
+}
+.projects-style .table table tbody tr td.stacks {
+  visibility: hidden;
+  display: none;
+}
+@media (min-width: 1024px) {
+  .projects-style .table table tbody tr td.stacks {
+    visibility: visible;
+    display: flex;
+  }
 }/*# sourceMappingURL=projects.css.map */

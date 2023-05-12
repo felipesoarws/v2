@@ -1,13 +1,13 @@
-import { Link } from "react-router-dom";
-import * as React from "react";
-import { useState } from "react";
+import { Link } from 'react-router-dom';
+import * as React from 'react';
+import { useState } from 'react';
 
 // styles
-import "./styles/projects.css";
-import projectsData from "./data/projectsData.json";
+import './styles/projects.css';
+import projectsData from './data/projectsData.json';
 
 // icons
-import { BsArrowUpShort } from "react-icons/bs";
+import { BsArrowUpShort } from 'react-icons/bs';
 
 //imports
 const Projects = () => {
@@ -24,7 +24,7 @@ const Projects = () => {
   return (
     <div className="projects-style">
       <div className="title">
-        <Link to={"/"}>
+        <Link to={'/'}>
           <div className="back-menu">
             <BsArrowUpShort />
             <h2>Felipe Soares</h2>
@@ -37,25 +37,32 @@ const Projects = () => {
           <thead>
             <tr>
               <th className="year">Ano</th>
-              <th colSpan="2" className="project">
-                Nome do Projeto
-              </th>
-              <th className="builtWith">Feito com</th>
-              <th className="link">Link</th>
+              <th className="project">Nome do Projeto</th>
+              <th className="links">Link</th>
+              <th className="stacks">Feito com</th>
             </tr>
           </thead>
           <tbody>
             {projectsData.map((data, index) => (
               <tr key={index}>
-                <td className="year">{data.year}</td>
+                <td className="year">
+                  <p>{data.year}</p>
+                </td>
                 <td className="project">
                   <a target="_blank" href={data.link}>
                     <p>{data.project}</p>
                     <BsArrowUpShort />
                   </a>
                 </td>
-                <td className="builtWith">{data.builtWith}</td>
-                <td className="link">{data.link}</td>
+                <td className="links">
+                  <a target="_blank" href={`https://${data.link}`}>
+                    <p>{data.link}</p>
+                    <BsArrowUpShort />
+                  </a>
+                </td>
+                <td className="stacks">
+                  <p>{data.builtWith}</p>
+                </td>
               </tr>
             ))}
           </tbody>

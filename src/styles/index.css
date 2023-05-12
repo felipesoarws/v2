@@ -55,7 +55,7 @@ body {
 }
 @media (min-width: 768px) {
   body {
-    margin: 4rem;
+    margin: 5rem 3rem;
   }
 }
 @media (min-width: 1300px) {
