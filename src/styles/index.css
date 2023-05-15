@@ -103,7 +103,7 @@ body .homepage-style .container .detail.container {
   position: absolute;
   top: 0;
   left: 0;
-  box-shadow: 0 0 300px 300px rgba(29, 78, 216, 0.1);
+  box-shadow: 0 0 10vw 10vw rgba(29, 78, 216, 0.1);
 }
 @media (min-width: 1024px) {
   body .homepage-style .container .detail.container {
@@ -403,7 +403,7 @@ body .homepage-style .container-second-sec .projects .detail.projects {
   position: absolute;
   top: 90vh;
   right: 15vw;
-  box-shadow: 0 0 300px 300px rgba(29, 78, 216, 0.1);
+  box-shadow: 0 0 10vw 10vw rgba(29, 78, 216, 0.1);
 }
 body .homepage-style .container-second-sec .projects .list {
   display: flex;
@@ -583,7 +583,7 @@ body .homepage-style .container-second-sec .skills .detail.skills {
   position: absolute;
   bottom: 0;
   left: 0;
-  box-shadow: 0 0 300px 300px rgba(29, 78, 216, 0.1);
+  box-shadow: 0 0 10vw 10vw rgba(29, 78, 216, 0.1);
 }
 body .homepage-style .container-second-sec .skills-list .item {
   padding: 1rem 0 3rem 0;

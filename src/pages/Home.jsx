@@ -16,7 +16,6 @@ import { ItemSkill } from '../components/ItemSkill';
 // images
 import vlrHub from '../assets/vlrhub_screen.png';
 import gowRagnarok from '../assets/gow_screen.png';
-import googleKeepClone from '../assets/google_keep_screen.png';
 import v1Portifolio from '../assets/v1_portifolio_screen.png';
 
 const Home = () => {

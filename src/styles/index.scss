@@ -113,7 +113,7 @@ body {
         position: absolute;
         top: 0;
         left: 0;
-        box-shadow: 0 0 300px 300px $Light-Blue;
+        box-shadow: 0 0 10vw 10vw $Light-Blue;
 
         @media (min-width: 1024px) {
           position: fixed;
@@ -404,7 +404,7 @@ body {
             position: absolute;
             top: 90vh;
             right: 15vw;
-            box-shadow: 0 0 300px 300px $Light-Blue;
+            box-shadow: 0 0 10vw 10vw $Light-Blue;
           }
 
           .list {
@@ -606,7 +606,7 @@ body {
             position: absolute;
             bottom: 0;
             left: 0;
-            box-shadow: 0 0 300px 300px $Light-Blue;
+            box-shadow: 0 0 10vw 10vw $Light-Blue;
           }
 
           &-list {
