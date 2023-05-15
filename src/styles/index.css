@@ -58,14 +58,9 @@ body {
     margin: 5rem 3rem;
   }
 }
-@media (min-width: 1300px) {
+@media (min-width: 1024px) {
   body {
-    margin: 5rem 8rem;
-  }
-}
-@media (min-width: 1366px) {
-  body {
-    margin: 4rem 7rem;
+    margin: 7vw 7vw;
   }
 }
 body h1,
@@ -94,6 +89,7 @@ body .homepage-style .container {
 @media (min-width: 1024px) {
   body .homepage-style .container {
     flex-direction: row;
+    gap: 4vw;
   }
 }
 body .homepage-style .container .detail.container {
@@ -124,6 +120,7 @@ body .homepage-style .container-first-sec {
     align-items: flex-start;
     justify-content: space-between;
     height: 80vh;
+    gap: 2vw;
   }
 }
 body .homepage-style .container-first-sec .resume {
@@ -137,6 +134,11 @@ body .homepage-style .container-first-sec .resume {
 @media (min-width: 768px) {
   body .homepage-style .container-first-sec .resume {
     width: 40vw;
+  }
+}
+@media (min-width: 1024px) {
+  body .homepage-style .container-first-sec .resume {
+    gap: 0.5vw;
   }
 }
 @media (min-width: 1300px) {
@@ -172,17 +174,7 @@ body .homepage-style .container-first-sec .resume h1 {
 }
 @media (min-width: 1024px) {
   body .homepage-style .container-first-sec .resume h1 {
-    font-size: 3.3rem;
-  }
-}
-@media (min-width: 1300px) {
-  body .homepage-style .container-first-sec .resume h1 {
-    font-size: 3.5rem;
-  }
-}
-@media (min-width: 1440px) {
-  body .homepage-style .container-first-sec .resume h1 {
-    font-size: 4rem;
+    font-size: 4vw;
   }
 }
 body .homepage-style .container-first-sec .resume h3 {
@@ -190,12 +182,7 @@ body .homepage-style .container-first-sec .resume h3 {
 }
 @media (min-width: 1024px) {
   body .homepage-style .container-first-sec .resume h3 {
-    font-size: 1.4rem;
-  }
-}
-@media (min-width: 1440px) {
-  body .homepage-style .container-first-sec .resume h3 {
-    font-size: 1.5rem;
+    font-size: 1.4vw;
   }
 }
 body .homepage-style .container-first-sec .resume p {
@@ -203,7 +190,7 @@ body .homepage-style .container-first-sec .resume p {
 }
 @media (min-width: 1024px) {
   body .homepage-style .container-first-sec .resume p {
-    font-size: 1rem;
+    font-size: 1vw;
   }
 }
 body .homepage-style .container-first-sec .resume p::-moz-selection {
@@ -227,6 +214,13 @@ body .homepage-style .container-first-sec .navegation {
     justify-content: center;
     gap: 1rem;
   }
+}
+@media (min-width: 1024px) and (min-width: 1024px) {
+  body .homepage-style .container-first-sec .navegation {
+    gap: 1vw;
+  }
+}
+@media (min-width: 1024px) {
   body .homepage-style .container-first-sec .navegation-item.actived h1 {
     color: white;
   }
@@ -234,6 +228,13 @@ body .homepage-style .container-first-sec .navegation {
     background-color: #e6f1ff;
     width: 5rem;
   }
+}
+@media (min-width: 1024px) and (min-width: 1024px) {
+  body .homepage-style .container-first-sec .navegation-item.actived span {
+    width: 5vw;
+  }
+}
+@media (min-width: 1024px) {
   body .homepage-style .container-first-sec .navegation-item a {
     display: flex;
     align-items: center;
@@ -241,18 +242,34 @@ body .homepage-style .container-first-sec .navegation {
     flex-direction: row-reverse;
     gap: 1rem;
   }
+}
+@media (min-width: 1024px) and (min-width: 1024px) {
+  body .homepage-style .container-first-sec .navegation-item a {
+    gap: 1vw;
+  }
+}
+@media (min-width: 1024px) {
   body .homepage-style .container-first-sec .navegation-item h1,
   body .homepage-style .container-first-sec .navegation-item span {
     transition: all 0.3s ease-in-out;
     cursor: pointer;
     color: #233554;
   }
+}
+@media (min-width: 1024px) {
   body .homepage-style .container-first-sec .navegation-item span {
     display: block;
     background-color: #233554;
     width: 3rem;
     height: 0.05rem;
   }
+}
+@media (min-width: 1024px) and (min-width: 1024px) {
+  body .homepage-style .container-first-sec .navegation-item span {
+    width: 3vw;
+  }
+}
+@media (min-width: 1024px) {
   body .homepage-style .container-first-sec .navegation-item h1 {
     font-size: 0.9rem;
     text-transform: uppercase;
@@ -261,12 +278,7 @@ body .homepage-style .container-first-sec .navegation {
 }
 @media (min-width: 1024px) and (min-width: 1024px) {
   body .homepage-style .container-first-sec .navegation-item h1 {
-    font-size: 1rem;
-  }
-}
-@media (min-width: 1024px) and (min-width: 1366px) {
-  body .homepage-style .container-first-sec .navegation-item h1 {
-    font-size: 0.8rem;
+    font-size: 0.9vw;
   }
 }
 @media (min-width: 1024px) {
@@ -280,6 +292,11 @@ body .homepage-style .container-first-sec .navegation {
     width: 5rem;
   }
 }
+@media (min-width: 1024px) and (min-width: 1024px) {
+  body .homepage-style .container-first-sec .navegation-item h1:hover + span {
+    font-size: 5vw;
+  }
+}
 body .homepage-style .container-first-sec .social-medias {
   display: flex;
   align-items: flex-start;
@@ -287,16 +304,31 @@ body .homepage-style .container-first-sec .social-medias {
   flex-direction: column;
   gap: 1rem;
 }
+@media (min-width: 1024px) {
+  body .homepage-style .container-first-sec .social-medias {
+    gap: 1vw;
+  }
+}
 body .homepage-style .container-first-sec .social-medias .icons {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 1rem;
 }
+@media (min-width: 1024px) {
+  body .homepage-style .container-first-sec .social-medias .icons {
+    gap: 1vw;
+  }
+}
 body .homepage-style .container-first-sec .social-medias .icons svg {
   font-size: 1.8rem;
   color: #8892b0;
   transition: all 0.3s ease-in-out;
+}
+@media (min-width: 1024px) {
+  body .homepage-style .container-first-sec .social-medias .icons svg {
+    font-size: 1.8vw;
+  }
 }
 body .homepage-style .container-first-sec .social-medias .icons svg:hover {
   color: #64ffda;
@@ -305,6 +337,11 @@ body .homepage-style .container-first-sec .social-medias a {
   text-decoration: none;
   color: #8892b0;
   transition: all 0.3s ease-in-out;
+}
+@media (min-width: 1024px) {
+  body .homepage-style .container-first-sec .social-medias a {
+    font-size: 1vw;
+  }
 }
 body .homepage-style .container-first-sec .social-medias a:hover {
   color: #64ffda;
@@ -334,6 +371,7 @@ body .homepage-style .container-second-sec .title {
   body .homepage-style .container-second-sec .title {
     display: none;
     visibility: hidden;
+    margin: 2vw 0;
   }
 }
 body .homepage-style .container-second-sec .title h1 {
@@ -357,19 +395,10 @@ body .homepage-style .container-second-sec .about .content p {
   font-size: 0.95rem;
   color: #8892b0;
 }
-@media (min-width: 1300px) {
+@media (min-width: 1024px) {
   body .homepage-style .container-second-sec .about .content p {
-    font-size: 1.2rem;
-  }
-}
-@media (min-width: 1366px) {
-  body .homepage-style .container-second-sec .about .content p {
-    font-size: 1rem;
-  }
-}
-@media (min-width: 1440px) {
-  body .homepage-style .container-second-sec .about .content p {
-    font-size: 1.1rem;
+    font-size: 1vw;
+    margin: 0.8vw 0;
   }
 }
 body .homepage-style .container-second-sec .about .content p::-moz-selection {
@@ -395,6 +424,11 @@ body .homepage-style .container-second-sec .about .content span::selection {
 body .homepage-style .container-second-sec .projects {
   margin: 4rem 0 2rem 0;
   overflow: hidden;
+}
+@media (min-width: 1024px) {
+  body .homepage-style .container-second-sec .projects {
+    margin: 4vw 0 2vw 0;
+  }
 }
 body .homepage-style .container-second-sec .projects .detail.projects {
   width: 1px;
@@ -426,15 +460,15 @@ body .homepage-style .container-second-sec .projects .list .project {
 }
 @media (min-width: 1024px) {
   body .homepage-style .container-second-sec .projects .list .project {
-    padding: 1.5rem;
+    padding: 1.5vw;
     cursor: pointer;
     z-index: 99999999999;
   }
   body .homepage-style .container-second-sec .projects .list .project:hover {
     opacity: 1;
     background-color: rgba(204, 214, 246, 0.05);
-    padding: 1.5rem;
-    border-radius: 0.3rem;
+    padding: 1.5vw;
+    border-radius: 0.3vw;
   }
   body .homepage-style .container-second-sec .projects .list .project:hover img {
     box-shadow: 0 0 1px 1px #a8b2d1;
@@ -460,6 +494,7 @@ body .homepage-style .container-second-sec .projects .list .project a {
   body .homepage-style .container-second-sec .projects .list .project a {
     align-items: flex-start;
     pointer-events: all;
+    gap: 1.2vw;
   }
 }
 body .homepage-style .container-second-sec .projects .list .project-image img {
@@ -471,7 +506,8 @@ body .homepage-style .container-second-sec .projects .list .project-image img {
 }
 @media (min-width: 1024px) {
   body .homepage-style .container-second-sec .projects .list .project-image img {
-    width: 10rem;
+    width: 11vw;
+    border-radius: 0.2vw;
   }
 }
 body .homepage-style .container-second-sec .projects .list .project-image img:hover {
@@ -487,7 +523,7 @@ body .homepage-style .container-second-sec .projects .list .project-content .tit
 }
 @media (min-width: 1024px) {
   body .homepage-style .container-second-sec .projects .list .project-content .title {
-    margin: 0 0 0.8rem 0;
+    margin: 0 0 0.8vw 0;
   }
 }
 body .homepage-style .container-second-sec .projects .list .project-content h1 {
@@ -506,6 +542,12 @@ body .homepage-style .container-second-sec .projects .list .project-content svg 
   font-weight: 500;
   transition: all 0.3s ease-in-out;
 }
+@media (min-width: 1024px) {
+  body .homepage-style .container-second-sec .projects .list .project-content h1,
+  body .homepage-style .container-second-sec .projects .list .project-content svg {
+    font-size: 1.1vw;
+  }
+}
 body .homepage-style .container-second-sec .projects .list .project-content h1:hover,
 body .homepage-style .container-second-sec .projects .list .project-content svg:hover {
   color: #64ffda;
@@ -515,10 +557,22 @@ body .homepage-style .container-second-sec .projects .list .project-content svg 
   font-size: 1.5rem;
   margin: 0 0.5rem;
 }
+@media (min-width: 1024px) {
+  body .homepage-style .container-second-sec .projects .list .project-content svg {
+    font-size: 1.5vw;
+    margin: 0 0.5vw;
+  }
+}
 body .homepage-style .container-second-sec .projects .list .project .desc {
   margin: 0.8rem 0;
   font-size: 0.9rem;
   color: #8892b0;
+}
+@media (min-width: 1024px) {
+  body .homepage-style .container-second-sec .projects .list .project .desc {
+    margin: 0.8vw 0;
+    font-size: 0.9vw;
+  }
 }
 body .homepage-style .container-second-sec .projects .list .project .desc::-moz-selection {
   background: #64ffda;
@@ -534,11 +588,21 @@ body .homepage-style .container-second-sec .projects .list .project .stacks {
   justify-content: flex-start;
   gap: 0.8rem;
 }
+@media (min-width: 1024px) {
+  body .homepage-style .container-second-sec .projects .list .project .stacks {
+    gap: 0.8vw;
+  }
+}
 body .homepage-style .container-second-sec .projects .list .project .stacks-item {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   gap: 0.8rem;
+}
+@media (min-width: 1024px) {
+  body .homepage-style .container-second-sec .projects .list .project .stacks-item {
+    gap: 0.8vw;
+  }
 }
 body .homepage-style .container-second-sec .projects .list .project .stacks-item p {
   color: #64ffda;
@@ -547,19 +611,42 @@ body .homepage-style .container-second-sec .projects .list .project .stacks-item
   font-size: 0.8rem;
   background-color: rgba(94, 234, 212, 0.1);
 }
+@media (min-width: 1024px) {
+  body .homepage-style .container-second-sec .projects .list .project .stacks-item p {
+    padding: 0.5vw 0.8vw;
+    border-radius: 1.5vw;
+    font-size: 0.8vw;
+  }
+}
 body .homepage-style .container-second-sec .projects .all-projects {
   margin: 2rem 0;
+}
+@media (min-width: 1024px) {
+  body .homepage-style .container-second-sec .projects .all-projects {
+    gap: 2vw;
+  }
 }
 body .homepage-style .container-second-sec .projects .all-projects nav ul li {
   display: flex;
   align-items: center;
   gap: 0.2rem;
 }
+@media (min-width: 1024px) {
+  body .homepage-style .container-second-sec .projects .all-projects nav ul li {
+    gap: 0.2rem;
+  }
+}
 body .homepage-style .container-second-sec .projects .all-projects nav ul li p,
 body .homepage-style .container-second-sec .projects .all-projects nav ul li svg {
   color: white;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
+}
+@media (min-width: 1024px) {
+  body .homepage-style .container-second-sec .projects .all-projects nav ul li p,
+  body .homepage-style .container-second-sec .projects .all-projects nav ul li svg {
+    font-size: 1vw;
+  }
 }
 body .homepage-style .container-second-sec .projects .all-projects nav ul li p:hover + svg {
   transform: translateX(1rem) rotate(90deg);
@@ -572,9 +659,19 @@ body .homepage-style .container-second-sec .projects .all-projects nav ul li svg
   font-size: 1.5rem;
   transform: rotate(90deg);
 }
+@media (min-width: 1024px) {
+  body .homepage-style .container-second-sec .projects .all-projects nav ul li svg {
+    font-size: 1.5vw;
+  }
+}
 body .homepage-style .container-second-sec .skills {
   margin: 2rem 0;
   position: relative;
+}
+@media (min-width: 1024px) {
+  body .homepage-style .container-second-sec .skills {
+    margin: 2vw 0;
+  }
 }
 body .homepage-style .container-second-sec .skills .detail.skills {
   width: 1px;
@@ -589,12 +686,23 @@ body .homepage-style .container-second-sec .skills-list .item {
   padding: 1rem 0 3rem 0;
   border-bottom: 1px solid rgba(136, 146, 176, 0.3);
 }
+@media (min-width: 1024px) {
+  body .homepage-style .container-second-sec .skills-list .item {
+    padding: 1vw 0 3vw 0;
+  }
+}
 body .homepage-style .container-second-sec .skills-list .item h2 {
   font-size: 1.1rem;
   color: white;
   letter-spacing: 0px;
   font-weight: 500;
   margin: 0.8rem 0;
+}
+@media (min-width: 1024px) {
+  body .homepage-style .container-second-sec .skills-list .item h2 {
+    font-size: 1.1vw;
+    margin: 0.8vw 0;
+  }
 }
 body .homepage-style .container-second-sec .skills-list .item-list {
   display: flex;
@@ -603,10 +711,22 @@ body .homepage-style .container-second-sec .skills-list .item-list {
   flex-wrap: wrap;
   gap: 1rem;
 }
+@media (min-width: 1024px) {
+  body .homepage-style .container-second-sec .skills-list .item-list {
+    gap: 1vw;
+  }
+}
 body .homepage-style .container-second-sec .skills-list .item-list p {
   padding: 0.5rem 0.8rem;
   border-radius: 1.5rem;
   font-size: 0.8rem;
+}
+@media (min-width: 1024px) {
+  body .homepage-style .container-second-sec .skills-list .item-list p {
+    padding: 0.5vw 0.8vw;
+    border-radius: 1.5vw;
+    font-size: 0.8vw;
+  }
 }
 body .homepage-style .container-second-sec .skills-list .item-list p.competent {
   background-color: rgba(94, 234, 212, 0.1);
