@@ -96,7 +96,7 @@ const Home = () => {
               <a href="https://github.com/felipesoarws" target="_blank">
                 <AiOutlineGithub />
               </a>
-              <a href="https://www.instagram.com/felipesoarws/" target="_blank">
+              <a href="https://www.instagram.com/codebyfelp/" target="_blank">
                 <AiOutlineInstagram />
               </a>
               <a
