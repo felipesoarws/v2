@@ -44,7 +44,16 @@ h5 {
   left: 0;
   right: auto;
   bottom: auto;
-  box-shadow: 0 0 10vw 10vw rgba(29, 78, 216, 0.1);
+  box-shadow: 0 0 300px 300px rgba(29, 78, 216, 0.1);
+}
+@media (min-width: 1024px) {
+  .projects-style .detail.projects {
+    top: auto;
+    left: auto;
+    right: 0;
+    bottom: 0;
+    box-shadow: 0 0 10vw 10vw rgba(29, 78, 216, 0.1);
+  }
 }
 .projects-style .detail.projects.bottom {
   top: auto;

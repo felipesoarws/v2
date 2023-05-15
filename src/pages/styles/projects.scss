@@ -50,7 +50,15 @@ h5 {
     left: 0;
     right: auto;
     bottom: auto;
-    box-shadow: 0 0 10vw 10vw $Light-Blue;
+    box-shadow: 0 0 300px 300px $Light-Blue;
+
+    @media (min-width: 1024px) {
+      top: auto;
+      left: auto;
+      right: 0;
+      bottom: 0;
+      box-shadow: 0 0 10vw 10vw $Light-Blue;
+    }
 
     &.bottom {
       top: auto;
