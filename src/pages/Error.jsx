@@ -1,7 +1,5 @@
 const Error = () => {
-  document.title = "error!";
-  
-  return <div></div>;
+  return <div>Error</div>;
 };
 
 export default Error;
