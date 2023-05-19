@@ -8,11 +8,11 @@ import Error from './pages/Error.jsx';
 import Projects from './pages/Projects.jsx';
 
 export default function App() {
+   
+  useEffect(() => {
    const tagManagerArgs = {
       gtmId: 'GTM-586T7P5',
     };
-  useEffect(() => {
-   
 
     TagManager.initialize(tagManagerArgs);
   }, []);
