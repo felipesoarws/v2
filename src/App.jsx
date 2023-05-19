@@ -15,7 +15,7 @@ export default function App() {
 
     TagManager.initialize(tagManagerArgs);
     ReactGA.initialize('G-1ES9TLR117');
-    ReactGA.pageView(window.location.pathname);
+    ReactGA.pageview(window.location.pathname);
   }, []);
   return (
     <Router>
