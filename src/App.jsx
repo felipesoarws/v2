@@ -8,14 +8,18 @@ import Error from './pages/Error.jsx';
 import Projects from './pages/Projects.jsx';
 
 export default function App() {
-  useEffect(() => {
-    const tagManagerArgs = {
+   const tagManagerArgs = {
       gtmId: 'GTM-586T7P5',
     };
+  useEffect(() => {
+   
 
     TagManager.initialize(tagManagerArgs);
-    ReactGA.initialize('G-1ES9TLR117');
   }, []);
+  
+    ReactGA.initialize('G-1ES9TLR117');
+    ReactGA.pageView(window.location.pathname);
+  
   return (
     <Router>
       <Routes>
