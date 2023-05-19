@@ -9,13 +9,13 @@ import Projects from './pages/Projects.jsx';
 
 export default function App() {
   useEffect(() => {
+    
     const tagManagerArgs = {
       gtmId: 'GTM-586T7P5',
     };
 
     TagManager.initialize(tagManagerArgs);
     ReactGA.initialize('G-1ES9TLR117');
-    ReactGA.pageview(window.location.pathname);
   }, []);
   return (
     <Router>
