@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { useEffect } from 'react';
 import TagManager from 'react-gtm-module';
+import ReactGA from 'react-ga4';
 
 import Home from './pages/Home.jsx';
 import Error from './pages/Error.jsx';
@@ -13,6 +14,7 @@ export default function App() {
     };
 
     TagManager.initialize(tagManagerArgs);
+    ReactGA.initialize('G-1ES9TLR117');
   }, []);
   return (
     <Router>
