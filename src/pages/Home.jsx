@@ -19,7 +19,7 @@ import gowRagnarok from '../assets/gow_screen.png';
 import v1Portifolio from '../assets/v1_portifolio_screen.png';
 
 const Home = () => {
-  document.title = "@felipesoarws | frontend developer"
+  document.title = "@felipesoarws | frontend developer";
   
   const aboutNavItem = useRef(null);
   const projectsNavItem = useRef(null);
