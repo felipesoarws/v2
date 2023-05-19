@@ -13,6 +13,7 @@
     "magicmouse.js": "^1.2.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-gtm-module": "^2.0.11",
     "react-icons": "^4.8.0",
     "react-router-dom": "^6.11.1",
     "react-table": "^7.8.0"
@@ -20,6 +21,7 @@
   "devDependencies": {
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
+    "@types/react-gtm-module": "^2.0.1",
     "@vitejs/plugin-react": "^4.0.0",
     "eslint": "^8.38.0",
     "eslint-plugin-react": "^7.32.2",
