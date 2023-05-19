@@ -9,7 +9,7 @@ import Projects from './pages/Projects.jsx';
 export default function App() {
   useEffect(() => {
     const tagManagerArgs = {
-      gtmid: 'GTM-586T7P5',
+      gtmId: 'GTM-586T7P5',
     };
 
     TagManager.initialize(tagManagerArgs);
