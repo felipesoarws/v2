@@ -21,8 +21,8 @@ export default function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/projects" element={<Projects />} />
         <Route path="/*" element={<Error />} />
+        <Route path="/projects" element={<Projects />} />
       </Routes>
     </Router>
   );
