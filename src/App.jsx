@@ -13,7 +13,7 @@ export default function App() {
     };
 
     TagManager.initialize(tagManagerArgs);
-  });
+  }, []);
   return (
     <Router>
       <Routes>
