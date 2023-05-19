@@ -11,6 +11,8 @@ import projectsData from './data/projectsData.json';
 import { BsArrowUpShort } from 'react-icons/bs';
 
 const Projects = () => {
+  document.title = "@felipesoarws | projetos";
+  
   projectsData.sort((a, b) => {
     if (a.year < b.year) {
       return 1;
