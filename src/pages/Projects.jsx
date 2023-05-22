@@ -54,7 +54,7 @@ const Projects = () => {
                     <p>{data.year}</p>
                   </td>
                   <td className="project">
-                    <a target="_blank" href={data.link}>
+                    <a target="_blank" href={`https://${data.link}`}>
                       <p>{data.project}</p>
                       <BsArrowUpShort />
                     </a>
