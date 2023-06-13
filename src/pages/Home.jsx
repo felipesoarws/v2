@@ -220,9 +220,11 @@ const Home = () => {
                 skills={[
                   'SEO',
                   'Google ADS',
-                  'Analytics',
+                  'Meta ADS',
+                  'Google Analytics',
                   'Google Tag Manager',
                   'SharpSpring',
+                   
                 ]}
                 skillProgress={'competent'}
               />
