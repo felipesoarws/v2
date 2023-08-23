@@ -221,10 +221,10 @@ const Home = () => {
                   'SEO',
                   'Google ADS',
                   'Meta ADS',
+                  'TikTok ADS',
                   'Google Analytics',
                   'Google Tag Manager',
                   'SharpSpring',
-                   
                 ]}
                 skillProgress={'competent'}
               />
