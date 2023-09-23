@@ -33,6 +33,6 @@
     "year": "2023",
     "project": "FeWe Studio",
     "builtWith": ["React (Vite)", "JavaScript", "SCSS"],
-    "link": "fewe.vercel.app/"
+    "link": "fewe.vercel.app"
   }
 ]
