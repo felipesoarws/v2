@@ -28,5 +28,11 @@
     "project": "Controle de Despesas",
     "builtWith": ["HTML", "JavaScript", "SCSS"],
     "link": "controle-de-despesas-rust.vercel.app"
+  },
+  {
+    "year": "2023",
+    "project": "FeWe Studio",
+    "builtWith": ["React (Vite)", "JavaScript", "SCSS"],
+    "link": "https://fewe.vercel.app/"
   }
 ]
