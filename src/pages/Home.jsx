@@ -118,7 +118,7 @@ const Home = () => {
             </div>
             <div className="content">
               <p>
-                Me chamo Felipe, tenho 20 anos e sou um estudante de programação
+                Me chamo Felipe, tenho 21 anos e sou um estudante de programação
                 apaixonado por tecnologia e inovação.
               </p>
 
