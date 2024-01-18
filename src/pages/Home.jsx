@@ -206,6 +206,7 @@ const Home = () => {
                   'JavaScript',
                   'ReactJS',
                   'ViteJS',
+                  'WordPress',
                 ]}
                 skillProgress={'competent'}
               />
