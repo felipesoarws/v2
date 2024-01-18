@@ -123,8 +123,7 @@ const Home = () => {
               </p>
 
               <p>
-                Desde 2021 venho me dedicando aos estudos na área e atualmente
-                estou cursando Análise e Desenvolvimento de Sistemas.
+                Desde 2021 venho me dedicando aos estudos na área e sou formado em Análise e Desenvolvimento de Sistemas.
               </p>
               <p>
                 Tenho interesse em aprender novas tecnologias e soluções que
