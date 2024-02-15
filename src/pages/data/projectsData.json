@@ -11,6 +11,12 @@
     "builtWith": ["React", "JavaScript", "SCSS"],
     "link": "god-of-war-ragnarok-landing-page.vercel.app"
   },
+   {
+    "year": "2022",
+    "project": "Memory Card Game",
+    "builtWith": ["React", "JavaScript", "SCSS"],
+    "link": "felipesoarws.github.io/memory-card-game/"
+  },
   {
     "year": "2023",
     "project": "Google Keep - Clone",
@@ -32,7 +38,7 @@
   {
     "year": "2023",
     "project": "FeWe Studio",
-    "builtWith": ["React (Vite)", "JavaScript", "SCSS"],
+    "builtWith": ["React", "JavaScript", "SCSS"],
     "link": "fewe.vercel.app"
   }
 ]
