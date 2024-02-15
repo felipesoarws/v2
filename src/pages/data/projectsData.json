@@ -7,6 +7,12 @@
   },
   {
     "year": "2022",
+    "project": "ToDo",
+    "builtWith": ["HTML", "JavaScript", "SCSS"],
+    "link": "to-do-app-blue.vercel.app/"
+  },
+  {
+    "year": "2022",
     "project": "God of War: Ragnarök",
     "builtWith": ["React", "JavaScript", "SCSS"],
     "link": "god-of-war-ragnarok-landing-page.vercel.app"
