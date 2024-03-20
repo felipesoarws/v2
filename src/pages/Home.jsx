@@ -134,7 +134,7 @@ const Home = () => {
                 Contenho conhecimento em <span>HTML</span>, <span>CSS</span>,{' '}
                 <span>JavaScript</span> e <span>Node</span>. Atualmente estou
                 estudando
-                <span> React</span> e <span>TypeScript</span>.
+                <span> React</span> e <span>React Native</span>.
               </p>
             </div>
           </div>
