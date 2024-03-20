@@ -206,6 +206,7 @@ const Home = () => {
                   'JavaScript',
                   'ReactJS',
                   'ViteJS',
+                  'React Native',
                   'WordPress',
                 ]}
                 skillProgress={'competent'}
@@ -235,7 +236,7 @@ const Home = () => {
               />
               <ItemSkill
                 stack={'Estudando atualmente'}
-                skills={['TypeScript', 'ReactJS']}
+                skills={['React Native', 'ReactJS']}
                 skillProgress={'studying'}
               />
             </div>
