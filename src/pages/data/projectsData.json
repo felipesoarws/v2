@@ -12,14 +12,14 @@
     "project": "ToDo",
     "builtWith": ["HTML", "JavaScript", "SCSS"],
     "desc": "Um projeto de criar tafefas, com opção de selecionar as ja feitas e apagar as selecionadas.",
-    "background": "../../../public/assets/todoapp_screen.png",
+    "background": "https://raw.githubusercontent.com/felipesoarws/v2/main/public/assets/todoapp_screen.png",
     "link": "to-do-app-blue.vercel.app/"
   },
   {
     "year": "2022",
     "project": "God of War: Ragnarök",
     "builtWith": ["React", "JavaScript", "SCSS"],
-    "desc": "Landing Page criada baseada no novo God of War: Ragnarök, com elaboração de carrossel de galeria e com descrições sobre alguns dos principais personagens da saga atual.",
+    "desc": "Landing Page criada baseada no God of War: Ragnarök, com elaboração de carrossel de galeria e com descrições sobre os principais personagens da saga atual.",
     "background": "../../../public/assets/gow_screen.png",
     "link": "god-of-war-ragnarok-landing-page.vercel.app"
   },

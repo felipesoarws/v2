@@ -132,7 +132,7 @@ h5 {
   align-items: flex-start;
   flex-direction: column;
   margin: 0.8rem 1rem 0.8rem 1rem;
-  transform: translateY(-4rem);
+  transform: translateY(-3rem);
 }
 @media screen and (min-width: 768px) {
   .slider-container .left-slide .slide {
