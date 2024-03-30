@@ -109,4 +109,7 @@ h5 {
 .projects-style .back-menu h2,
 .projects-style .back-menu svg {
   color: #64ffda;
+}
+.projects-style .projects {
+  background-color: red;
 }/*# sourceMappingURL=projects.css.map */
