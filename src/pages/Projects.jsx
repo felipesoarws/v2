@@ -102,7 +102,7 @@ const Projects = () => {
 
                       <p>
                         <span className="link">
-                          <a href={`https:${p.link}`} target="_blank">
+                          <a href={p.link} target="_blank">
                             {" "}
                             <BsArrowUpShort />
                             Acesse aqui
