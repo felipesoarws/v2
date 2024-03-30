@@ -87,8 +87,31 @@ const Projects = () => {
             <div className="left-slide" ref={slideLeftRef}>
               {projectsData.map((p, i) => (
                 <div className="slide" key={i}>
-                  <h1>{i + 1}</h1>
-                  <p>{p.project}</p>
+                  <div className="slide-title">
+                    <h1>{i + 1}.</h1>
+                    <h2>{p.project}</h2>
+                  </div>
+                  <div className="slide-content">
+                    <p>{p.desc}</p>
+
+                    <div className="slide-stacks">
+                      <div className="stacks">
+                        <p>Feito com:</p>
+                        <span>{p.builtWith.join(", ")}.</span>
+                      </div>
+
+                      <p>
+                        <span className="link">
+                          <a href={p.link} target="_blank">
+                            {" "}
+                            <BsArrowUpShort />
+                            Acesse aqui
+                          </a>
+                          .
+                        </span>
+                      </p>
+                    </div>
+                  </div>
                 </div>
               ))}
             </div>
@@ -104,13 +127,10 @@ const Projects = () => {
             </div>
 
             <div className="action-buttons">
-              <button
-                className="down-button"
-                onClick={() => changeSlide("down")}
-              >
+              <button className="down-button" onClick={() => changeSlide("up")}>
                 <FaAngleDown />
               </button>
-              <button className="up-button" onClick={() => changeSlide("up")}>
+              <button className="up-button" onClick={() => changeSlide("down")}>
                 <FaAngleUp />
               </button>
             </div>
