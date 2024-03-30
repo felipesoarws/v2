@@ -119,6 +119,232 @@ h5 {
   }
 
   .projects {
-    background-color: red;
+  }
+  .table {
+    margin: 2rem 0;
+
+    table {
+      border-collapse: collapse;
+      text-align: left;
+
+      thead {
+        tr {
+          border-bottom: 0.5px solid rgba($color: #34373d, $alpha: 0.9);
+
+          th {
+            padding: 0.7rem 1rem;
+            color: #e2e8f0;
+            font-weight: 500;
+            font-size: 0.8rem;
+
+            @media (min-width: 1024px) {
+              font-size: 0.9vw;
+              padding: 0.7vw 1vw;
+            }
+            &.links {
+              visibility: hidden;
+              display: none;
+
+              @media (min-width: 768px) {
+                visibility: visible;
+                display: table-cell;
+              }
+            }
+
+            &.stacks {
+              visibility: hidden;
+              display: none;
+
+              p {
+                color: $Green;
+                padding: 0.5rem 0.8rem;
+                border-radius: 1.5rem;
+                font-size: 0.8rem;
+                background-color: rgb(94 234 212/0.1);
+
+                @media (min-width: 1024px) {
+                  font-size: 0.9vw;
+                  padding: 0.5vw 0.8vw;
+                  border-radius: 1.5vw;
+                }
+              }
+
+              @media (min-width: 1024px) {
+                visibility: visible;
+                display: table-cell;
+              }
+            }
+          }
+        }
+      }
+      tbody tr {
+        border-bottom: 0.5px solid rgba($color: #34373d, $alpha: 0.9);
+
+        &:last-child {
+          border: none;
+        }
+        td {
+          padding: 0.8rem 01rem;
+          font-size: 0.8rem;
+
+          @media (min-width: 1024px) {
+            font-size: 0.9vw;
+            padding: 0.8vw 1vw;
+          }
+
+          &.year {
+            color: $Slate;
+          }
+
+          &.project {
+            a {
+              display: flex;
+              align-items: center;
+              justify-content: flex-start;
+              cursor: pointer;
+              font-size: 0.9rem;
+
+              @media (min-width: 768px) {
+                pointer-events: none;
+              }
+
+              @media (min-width: 1024px) {
+                font-size: 0.9vw;
+              }
+
+              svg {
+                transform: translate(-3px, 3px) rotate(45deg);
+                margin: 0 0.5rem;
+                font-size: 1rem;
+                color: white;
+                text-transform: none;
+                letter-spacing: 0px;
+                font-weight: 500;
+                transition: all 0.3s ease-in-out;
+
+                @media (min-width: 768px) {
+                  display: none;
+                  visibility: hidden;
+                }
+
+                @media (min-width: 1024px) {
+                  font-size: 0.9vw;
+                  margin: 0 0.5vw;
+                }
+              }
+
+              p {
+                color: white;
+                font-weight: 600;
+                font-family: "Inter", sans-serif;
+                transition: all 0.3s ease-in-out;
+
+                &:hover {
+                  color: $Green;
+                }
+
+                &:hover + svg {
+                  transform: translate(3px, -3px) rotate(45deg);
+                  color: $Green;
+                }
+              }
+            }
+          }
+
+          &.links {
+            visibility: hidden;
+            display: none;
+
+            @media (min-width: 768px) {
+              visibility: visible;
+              display: table-cell;
+
+              a {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                cursor: pointer;
+                font-size: 0.8rem;
+                pointer-events: none;
+
+                @media (min-width: 768px) {
+                  pointer-events: all;
+                }
+
+                @media (min-width: 1024px) {
+                  font-size: 0.9vw;
+                }
+
+                svg {
+                  transform: translate(-3px, 3px) rotate(45deg);
+                  margin: 0 0.5rem;
+                  font-size: 1rem;
+                  color: $Gray;
+                  text-transform: none;
+                  letter-spacing: 0px;
+                  font-weight: 500;
+                  transition: all 0.3s ease-in-out;
+
+                  @media (min-width: 1024px) {
+                    font-size: 1vw;
+                    margin: 0 0.5vw;
+                  }
+                }
+
+                p {
+                  font-size: 0.8rem;
+                  color: $Gray;
+                  transition: all 0.3s ease-in-out;
+
+                  @media (min-width: 1024px) {
+                    font-size: 0.8vw;
+                  }
+
+                  &:hover {
+                    color: $Green;
+                  }
+
+                  &:hover + svg {
+                    color: $Green;
+                    transform: translate(1px, -1px) rotate(45deg);
+                  }
+                }
+              }
+            }
+          }
+
+          &.stacks {
+            visibility: hidden;
+            display: none;
+
+            .item {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              gap: 1rem;
+
+              p {
+                color: $Green;
+                padding: 0.5rem 0.8rem;
+                border-radius: 1.5rem;
+                font-size: 0.7rem;
+                background-color: rgb(94 234 212/0.1);
+
+                @media (min-width: 1024px) {
+                  font-size: 0.8vw;
+                  padding: 0.5vw 0.8vw;
+                  border-radius: 1.5vw;
+                }
+              }
+            }
+
+            @media (min-width: 1024px) {
+              visibility: visible;
+              display: table-cell;
+            }
+          }
+        }
+      }
+    }
   }
 }

@@ -37,7 +37,47 @@ const Projects = () => {
           </Link>
           <h1>Todos os projetos</h1>
         </div>
-        <div className="projects"></div>
+        <div className="table">
+          <table>
+            <thead>
+              <tr>
+                <th className="year">Ano</th>
+                <th className="project">Nome do Projeto</th>
+                <th className="stacks">Feito com</th>
+                <th className="links">Link</th>
+              </tr>
+            </thead>
+            <tbody>
+              {projectsData.map((data, index) => (
+                <tr key={index}>
+                  <td className="year">
+                    <p>{data.year}</p>
+                  </td>
+                  <td className="project">
+                    <a target="_blank" href={`https://${data.link}`}>
+                      <p>{data.project}</p>
+                      <BsArrowUpShort />
+                    </a>
+                  </td>
+                  <td className="stacks">
+                    <div className="item">
+                      {data.builtWith.map((stack, idx) => (
+                        <p key={idx}>{stack}</p>
+                      ))}
+                    </div>
+                  </td>
+                  <td className="links">
+                    <a target="_blank" href={`https://${data.link}`}>
+                      <p>{data.link}</p>
+                      <BsArrowUpShort />
+                    </a>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <div className="detail projects bottom"></div>
       </div>
     </div>
   );
