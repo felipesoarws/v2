@@ -50,33 +50,33 @@ img {
   width: 100%;
 }
 
-body {
-  margin: 3rem 2rem;
+body .homepage-style {
+  padding: 3rem 2rem;
   background-color: #0f0f0f;
   position: relative;
 }
 @media (min-width: 768px) {
-  body {
-    margin: 5rem 3rem;
+  body .homepage-style {
+    padding: 5rem 3rem;
   }
 }
 @media (min-width: 1024px) {
-  body {
-    margin: 7vw 7vw;
+  body .homepage-style {
+    padding: 7vw 7vw;
   }
 }
-body h1,
-body h3 {
+body .homepage-style h1,
+body .homepage-style h3 {
   color: #e6f1ff;
 }
-body p {
+body .homepage-style p {
   color: #d1d5e0;
 }
-body p::-moz-selection {
+body .homepage-style p::-moz-selection {
   background: #e6f1ff;
   color: #0f0f0f;
 }
-body p::selection {
+body .homepage-style p::selection {
   background: #e6f1ff;
   color: #0f0f0f;
 }

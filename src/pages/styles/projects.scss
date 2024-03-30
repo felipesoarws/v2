@@ -1,22 +1,19 @@
-$Navy: #0a192f;
-$Light-Navy: #112240;
-$Lightest-Navy: #233554;
-$Slate: #8892b0;
-$Light-Slate: #a8b2d1;
-$Lightest-Slate: #ccd6f6;
+$Gray: #0f0f0f;
+$Light-Navy: #202020;
+$Navy: #112240;
+$Lightest-Navy: #ffffff;
+$Slate: #d1d5e0;
+$Light-Slate: #656c81;
 $White: #e6f1ff;
 $Green: #64ffda;
 $Light-Gray: rgba(122, 129, 151, 0.1);
-$Gray: #94a3bb;
 
 * {
   text-decoration: none;
   font-family: "Poppins", sans-serif;
-
-  &::selection {
-    background: $Green;
-    color: $Navy;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 h1,
@@ -32,14 +29,7 @@ h5 {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-
-  @media (min-width: 1024px) {
-    min-height: 70vh;
-  }
-
-  @media (min-width: 1440px) {
-    margin: 7vw auto;
-  }
+  background-color: $Gray;
 
   .detail.projects {
     width: 1px;
@@ -68,283 +58,172 @@ h5 {
     }
   }
 
-  h1 {
-    font-size: 6vw;
+  .title {
+    position: fixed;
+    z-index: 100;
+    top: 2rem;
+    left: 2rem;
 
-    @media (min-width: 768px) {
-      font-size: 3vw;
+    h1 {
+      font-size: 6vw;
+      color: white;
+      transform: translate(0.2rem, -0.8rem);
+
+      @media (min-width: 768px) {
+        font-size: 2vw;
+      }
+    }
+
+    .back-menu {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 0.2rem;
+      margin-bottom: 1rem;
+      cursor: pointer;
+      width: 10rem;
+
+      @media (min-width: 1024px) {
+        width: 9vw;
+        gap: 0.2vw;
+        margin-bottom: 1vw;
+      }
+
+      &:hover > svg {
+        transform: rotate(-90deg) translateY(-0.5rem);
+      }
+
+      svg {
+        font-size: 0.9rem;
+        transform: rotate(-90deg) translateX(0rem);
+        transition: all 0.3s ease-in-out;
+
+        @media (min-width: 1024px) {
+          font-size: 1.2vw;
+        }
+      }
+
+      h2 {
+        font-size: 0.9rem;
+
+        @media (min-width: 1024px) {
+          font-size: 1vw;
+        }
+      }
+
+      h2,
+      svg {
+        color: $Green;
+      }
     }
   }
-  .back-menu {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 0.2rem;
-    margin-bottom: 1rem;
-    cursor: pointer;
-    width: 10rem;
+}
 
-    @media (min-width: 1024px) {
-      width: 9vw;
-      gap: 0.2vw;
-      margin-bottom: 1vw;
+body {
+  height: 100vh;
+}
+
+.slider-container {
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+
+  .left-slide {
+    height: 100vh;
+    width: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.3s ease-in-out;
+
+    @media screen and (min-width: 768px) {
+      width: 35%;
     }
 
-    &:hover > svg {
-      transform: rotate(-90deg) translateY(-0.5rem);
+    & > div {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: white;
+    }
+  }
+
+  .right-slide {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    transition: all 0.3s ease-in-out;
+
+    @media screen and (min-width: 768px) {
+      left: 35%;
+      width: 65%;
     }
 
-    svg {
-      font-size: 0.9rem;
-      transform: rotate(-90deg) translateX(0rem);
+    & > div {
+      height: 100%;
+      width: 100%;
+      border-left: 2px solid rgba(255, 255, 255, 0.3);
+      border-top: 2px solid rgba(255, 255, 255, 0.3);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: left center;
+      border-top-left-radius: 1rem;
+      border-bottom-left-radius: 1rem;
+    }
+  }
+
+  .action-buttons {
+    button {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      z-index: 100;
+      background-color: rgba(255, 255, 255, 0.61);
+      border: 0;
+      color: $Gray;
+      cursor: pointer;
+      padding: 0.9rem;
       transition: all 0.3s ease-in-out;
 
-      @media (min-width: 1024px) {
-        font-size: 1.2vw;
+      @media screen and (min-width: 768px) {
+        left: 35%;
+      }
+
+      svg {
+        font-size: 1rem;
+
+        @media screen and (min-width: 768px) {
+          font-size: 1.3vw;
+        }
+      }
+
+      &:hover {
+        color: #222;
+        background-color: white;
+      }
+
+      &:focus {
+        outline: none;
       }
     }
 
-    h2 {
-      font-size: 0.9rem;
-
-      @media (min-width: 1024px) {
-        font-size: 0.9vw;
-      }
+    .down-button {
+      transform: translateX(-100%);
+      border-top-left-radius: 0.7rem;
+      border-bottom-left-radius: 0.7rem;
     }
 
-    h2,
-    svg {
-      color: $Green;
-    }
-  }
-
-  .projects {
-  }
-  .table {
-    margin: 2rem 0;
-
-    table {
-      border-collapse: collapse;
-      text-align: left;
-
-      thead {
-        tr {
-          border-bottom: 0.5px solid rgba($color: #34373d, $alpha: 0.9);
-
-          th {
-            padding: 0.7rem 1rem;
-            color: #e2e8f0;
-            font-weight: 500;
-            font-size: 0.8rem;
-
-            @media (min-width: 1024px) {
-              font-size: 0.9vw;
-              padding: 0.7vw 1vw;
-            }
-            &.links {
-              visibility: hidden;
-              display: none;
-
-              @media (min-width: 768px) {
-                visibility: visible;
-                display: table-cell;
-              }
-            }
-
-            &.stacks {
-              visibility: hidden;
-              display: none;
-
-              p {
-                color: $Green;
-                padding: 0.5rem 0.8rem;
-                border-radius: 1.5rem;
-                font-size: 0.8rem;
-                background-color: rgb(94 234 212/0.1);
-
-                @media (min-width: 1024px) {
-                  font-size: 0.9vw;
-                  padding: 0.5vw 0.8vw;
-                  border-radius: 1.5vw;
-                }
-              }
-
-              @media (min-width: 1024px) {
-                visibility: visible;
-                display: table-cell;
-              }
-            }
-          }
-        }
-      }
-      tbody tr {
-        border-bottom: 0.5px solid rgba($color: #34373d, $alpha: 0.9);
-
-        &:last-child {
-          border: none;
-        }
-        td {
-          padding: 0.8rem 01rem;
-          font-size: 0.8rem;
-
-          @media (min-width: 1024px) {
-            font-size: 0.9vw;
-            padding: 0.8vw 1vw;
-          }
-
-          &.year {
-            color: $Slate;
-          }
-
-          &.project {
-            a {
-              display: flex;
-              align-items: center;
-              justify-content: flex-start;
-              cursor: pointer;
-              font-size: 0.9rem;
-
-              @media (min-width: 768px) {
-                pointer-events: none;
-              }
-
-              @media (min-width: 1024px) {
-                font-size: 0.9vw;
-              }
-
-              svg {
-                transform: translate(-3px, 3px) rotate(45deg);
-                margin: 0 0.5rem;
-                font-size: 1rem;
-                color: white;
-                text-transform: none;
-                letter-spacing: 0px;
-                font-weight: 500;
-                transition: all 0.3s ease-in-out;
-
-                @media (min-width: 768px) {
-                  display: none;
-                  visibility: hidden;
-                }
-
-                @media (min-width: 1024px) {
-                  font-size: 0.9vw;
-                  margin: 0 0.5vw;
-                }
-              }
-
-              p {
-                color: white;
-                font-weight: 600;
-                font-family: "Inter", sans-serif;
-                transition: all 0.3s ease-in-out;
-
-                &:hover {
-                  color: $Green;
-                }
-
-                &:hover + svg {
-                  transform: translate(3px, -3px) rotate(45deg);
-                  color: $Green;
-                }
-              }
-            }
-          }
-
-          &.links {
-            visibility: hidden;
-            display: none;
-
-            @media (min-width: 768px) {
-              visibility: visible;
-              display: table-cell;
-
-              a {
-                display: flex;
-                align-items: center;
-                justify-content: flex-start;
-                cursor: pointer;
-                font-size: 0.8rem;
-                pointer-events: none;
-
-                @media (min-width: 768px) {
-                  pointer-events: all;
-                }
-
-                @media (min-width: 1024px) {
-                  font-size: 0.9vw;
-                }
-
-                svg {
-                  transform: translate(-3px, 3px) rotate(45deg);
-                  margin: 0 0.5rem;
-                  font-size: 1rem;
-                  color: $Gray;
-                  text-transform: none;
-                  letter-spacing: 0px;
-                  font-weight: 500;
-                  transition: all 0.3s ease-in-out;
-
-                  @media (min-width: 1024px) {
-                    font-size: 1vw;
-                    margin: 0 0.5vw;
-                  }
-                }
-
-                p {
-                  font-size: 0.8rem;
-                  color: $Gray;
-                  transition: all 0.3s ease-in-out;
-
-                  @media (min-width: 1024px) {
-                    font-size: 0.8vw;
-                  }
-
-                  &:hover {
-                    color: $Green;
-                  }
-
-                  &:hover + svg {
-                    color: $Green;
-                    transform: translate(1px, -1px) rotate(45deg);
-                  }
-                }
-              }
-            }
-          }
-
-          &.stacks {
-            visibility: hidden;
-            display: none;
-
-            .item {
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              gap: 1rem;
-
-              p {
-                color: $Green;
-                padding: 0.5rem 0.8rem;
-                border-radius: 1.5rem;
-                font-size: 0.7rem;
-                background-color: rgb(94 234 212/0.1);
-
-                @media (min-width: 1024px) {
-                  font-size: 0.8vw;
-                  padding: 0.5vw 0.8vw;
-                  border-radius: 1.5vw;
-                }
-              }
-            }
-
-            @media (min-width: 1024px) {
-              visibility: visible;
-              display: table-cell;
-            }
-          }
-        }
-      }
+    .up-button {
+      transform: translateY(-100%);
+      border-top-right-radius: 0.7rem;
+      border-bottom-right-radius: 0.7rem;
+      border: 1px solid black;
     }
   }
 }

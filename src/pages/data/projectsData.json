@@ -3,48 +3,49 @@
     "year": "2022",
     "project": "Portifólio (v1)",
     "builtWith": ["React", "JavaScript", "SCSS"],
+    "background": "../../../public/assets/v1_portifolio_screen.png",
     "link": "v1-felipesoares-dev.vercel.app"
   },
   {
     "year": "2022",
     "project": "ToDo",
     "builtWith": ["HTML", "JavaScript", "SCSS"],
+    "background": "../../../public/assets/todoapp_screen.png",
     "link": "to-do-app-blue.vercel.app/"
   },
   {
     "year": "2022",
     "project": "God of War: Ragnarök",
     "builtWith": ["React", "JavaScript", "SCSS"],
+    "background": "../../../public/assets/gow_screen.png",
     "link": "god-of-war-ragnarok-landing-page.vercel.app"
-  },
-   {
-    "year": "2022",
-    "project": "Memory Card Game",
-    "builtWith": ["React", "JavaScript", "SCSS"],
-    "link": "felipesoarws.github.io/memory-card-game/"
   },
   {
     "year": "2023",
     "project": "Google Keep - Clone",
     "builtWith": ["React", "JavaScript", "SCSS"],
+    "background": "../../../public/assets/google_keep_screen.png",
     "link": "google-keep-clone-dev.vercel.app"
   },
   {
     "year": "2022",
     "project": "Valorant Hub",
     "builtWith": ["React", "JavaScript", "SCSS"],
+    "background": "../../../public/assets/vlrhub_screen.png",
     "link": "vlrgg.vercel.app"
   },
   {
     "year": "2023",
     "project": "Controle de Despesas",
     "builtWith": ["HTML", "JavaScript", "SCSS"],
+    "background": "../../../public/assets/controle_despesas_screen.png",
     "link": "controle-de-despesas-rust.vercel.app"
   },
   {
     "year": "2023",
     "project": "FeWe Studio",
     "builtWith": ["React", "JavaScript", "SCSS"],
+    "background": "../../../public/assets/fewe_studio_screen.png",
     "link": "fewe.vercel.app"
   }
 ]

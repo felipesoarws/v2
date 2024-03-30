@@ -65,33 +65,33 @@ img {
 }
 
 body {
-  margin: 3rem 2rem;
-  background-color: $Gray;
-
-  position: relative;
-
-  @media (min-width: 768px) {
-    margin: 5rem 3rem;
-  }
-
-  @media (min-width: 1024px) {
-    margin: 7vw 7vw;
-  }
-
-  h1,
-  h3 {
-    color: $White;
-  }
-
-  p {
-    color: $Slate;
-    &::selection {
-      background: $White;
-      color: $Gray;
-    }
-  }
-
   .homepage-style {
+    padding: 3rem 2rem;
+    background-color: $Gray;
+
+    position: relative;
+
+    @media (min-width: 768px) {
+      padding: 5rem 3rem;
+    }
+
+    @media (min-width: 1024px) {
+      padding: 7vw 7vw;
+    }
+
+    h1,
+    h3 {
+      color: $White;
+    }
+
+    p {
+      color: $Slate;
+      &::selection {
+        background: $White;
+        color: $Gray;
+      }
+    }
+
     .container {
       display: flex;
       align-items: flex-start;

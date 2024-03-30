@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import * as React from "react";
+import { FaAngleDown, FaAngleUp } from "react-icons/fa";
+import { useEffect, useLayoutEffect, useRef, useState } from "react";
 
 // styles
 import "./styles/projects.css";
@@ -23,6 +24,49 @@ const Projects = () => {
     return 0;
   });
 
+  const [sliderContainer, setSliderContainer] = useState();
+  const [slideRight, setSlideRight] = useState();
+  const [slideLeft, setSlideLeft] = useState();
+
+  const sliderContainerRef = useRef(null);
+  const slideRightRef = useRef(null);
+  const slideLeftRef = useRef(null);
+  const slidesLenght = projectsData.length;
+
+  useLayoutEffect(() => {
+    setSliderContainer(sliderContainerRef.current);
+    setSlideLeft(slideLeftRef.current);
+    setSlideRight(slideRightRef.current);
+  });
+
+  let activeSlideIndex = 0;
+
+  const changeSlide = (direction) => {
+    slideLeft.style.top = `-${slidesLenght - 1 * 100}vh`;
+
+    const sliderHeight = sliderContainer.clientHeight;
+
+    if (direction == "up") {
+      activeSlideIndex++;
+      if (activeSlideIndex > slidesLenght - 1) {
+        activeSlideIndex = 0;
+      }
+    } else if (direction == "down") {
+      activeSlideIndex--;
+      if (activeSlideIndex < 0) {
+        activeSlideIndex = slidesLenght - 1;
+      }
+    }
+
+    slideRight.style.transform = `translateY(-${
+      activeSlideIndex * sliderHeight
+    }px)`;
+
+    slideLeft.style.transform = `translateY(-${
+      activeSlideIndex * sliderHeight
+    }px)`;
+  };
+
   return (
     <div className="projects-style">
       <div className="projects-container">
@@ -37,47 +81,41 @@ const Projects = () => {
           </Link>
           <h1>Todos os projetos</h1>
         </div>
-        <div className="table">
-          <table>
-            <thead>
-              <tr>
-                <th className="year">Ano</th>
-                <th className="project">Nome do Projeto</th>
-                <th className="stacks">Feito com</th>
-                <th className="links">Link</th>
-              </tr>
-            </thead>
-            <tbody>
-              {projectsData.map((data, index) => (
-                <tr key={index}>
-                  <td className="year">
-                    <p>{data.year}</p>
-                  </td>
-                  <td className="project">
-                    <a target="_blank" href={`https://${data.link}`}>
-                      <p>{data.project}</p>
-                      <BsArrowUpShort />
-                    </a>
-                  </td>
-                  <td className="stacks">
-                    <div className="item">
-                      {data.builtWith.map((stack, idx) => (
-                        <p key={idx}>{stack}</p>
-                      ))}
-                    </div>
-                  </td>
-                  <td className="links">
-                    <a target="_blank" href={`https://${data.link}`}>
-                      <p>{data.link}</p>
-                      <BsArrowUpShort />
-                    </a>
-                  </td>
-                </tr>
+
+        <div className="projects">
+          <div className="slider-container" ref={sliderContainerRef}>
+            <div className="left-slide" ref={slideLeftRef}>
+              {projectsData.map((p, i) => (
+                <div className="slide" key={i}>
+                  <h1>{i + 1}</h1>
+                  <p>{p.project}</p>
+                </div>
               ))}
-            </tbody>
-          </table>
+            </div>
+
+            <div className="right-slide" ref={slideRightRef}>
+              {projectsData.map((p, i) => (
+                <div
+                  className="project-bg"
+                  key={i}
+                  style={{ backgroundImage: `url(${p.background})` }}
+                ></div>
+              ))}
+            </div>
+
+            <div className="action-buttons">
+              <button
+                className="down-button"
+                onClick={() => changeSlide("down")}
+              >
+                <FaAngleDown />
+              </button>
+              <button className="up-button" onClick={() => changeSlide("up")}>
+                <FaAngleUp />
+              </button>
+            </div>
+          </div>
         </div>
-        <div className="detail projects bottom"></div>
       </div>
     </div>
   );
