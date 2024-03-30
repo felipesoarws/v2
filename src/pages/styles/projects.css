@@ -299,8 +299,6 @@ h5 {
   .projects-style .table table tbody tr td.links a p:hover {
     color: #64ffda;
   }
-}
-@media (min-width: 768px) {
   .projects-style .table table tbody tr td.links a p:hover + svg {
     color: #64ffda;
     transform: translate(1px, -1px) rotate(45deg);
