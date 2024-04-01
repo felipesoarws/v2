@@ -5,7 +5,7 @@
     "builtWith": ["React", "SCSS"],
     "desc": "Primeira versão do meu portifólio criado em 2022, baseando-se em uma interface de Mac.",
     "background": "https://raw.githubusercontent.com/felipesoarws/v2/main/src/assets/v1_portifolio_screen.png",
-    "desktopBackground": "https://raw.githubusercontent.com/felipesoarws/v2/main/src/assets/v1_portifolio_screen_desk.png",
+    "desktopBackground": "https://raw.githubusercontent.com/felipesoarws/v2/main/src/assets/v1_portifolio_screen_desk.jpg",
     "link": "https://v1-felipesoares-dev.vercel.app"
   },
   {
@@ -14,7 +14,7 @@
     "builtWith": ["HTML", "JavaScript", "SCSS"],
     "desc": "Um projeto de criar tafefas, com opção de selecionar as ja feitas e apagar as selecionadas.",
     "background": "https://raw.githubusercontent.com/felipesoarws/v2/main/src/assets/todoapp_screen.png",
-    "desktopBackground": "https://raw.githubusercontent.com/felipesoarws/v2/main/src/assets/todoapp_screen_desk.png",
+    "desktopBackground": "https://raw.githubusercontent.com/felipesoarws/v2/main/src/assets/todoapp_screen_desk.jpg",
     "link": "https://to-do-app-blue.vercel.app/"
   },
   {
@@ -32,7 +32,7 @@
     "builtWith": ["React", "SCSS"],
     "desc": "Clone do Google Keep, com funcionalidades de criar tarefas, alternar layout de visualização e marcas taferas ja feitas.",
     "background": "https://raw.githubusercontent.com/felipesoarws/v2/main/src/assets/google_keep_screen.png",
-    "desktopBackground": "https://raw.githubusercontent.com/felipesoarws/v2/main/src/assets/google_keep_screen_desk.png",
+    "desktopBackground": "https://raw.githubusercontent.com/felipesoarws/v2/main/src/assets/google_keep_screen_desk.jpg",
     "link": "https://google-keep-clone-dev.vercel.app"
   },
   {
@@ -41,7 +41,7 @@
     "builtWith": ["React", "SCSS"],
     "desc": "Um website do jogo Valorant, onde pode consultar os agentes do jogo e suas caracteristicas, como também ranks e mapas do jogo, além de suas armas e suas skins.",
     "background": "https://raw.githubusercontent.com/felipesoarws/v2/main/src/assets/vlrhub_screen.png",
-    "desktopBackground": "https://raw.githubusercontent.com/felipesoarws/v2/main/src/assets/vlrhub_screen_desk.png",
+    "desktopBackground": "https://raw.githubusercontent.com/felipesoarws/v2/main/src/assets/vlrhub_screen_desk.jpg",
     "link": "https://vlrgg.vercel.app"
   },
   {
@@ -50,7 +50,7 @@
     "builtWith": ["goDaddy", "HTML", "SCSS"],
     "desc": "Criação e costumização da página da German Áudio, utilizando ferramentas do goDaddy e também scrips próprios de HTML e sCSS para layout mais alinhado com a ideia do cliente.",
     "background": "https://raw.githubusercontent.com/felipesoarws/v2/main/src/assets/german_screen.png",
-    "desktopBackground": "https://raw.githubusercontent.com/felipesoarws/v2/main/src/assets/german_screen_desk.png",
+    "desktopBackground": "https://raw.githubusercontent.com/felipesoarws/v2/main/src/assets/german_screen_desk.jpg",
     "link": "https://germanaudio.com.br/"
   },
   {
@@ -59,7 +59,7 @@
     "builtWith": ["React", "SCSS"],
     "desc": "Landing Page criada para um studio com propósito de vender serviços de desenvolvimento web.",
     "background": "https://raw.githubusercontent.com/felipesoarws/v2/main/src/assets/fewe_studio_screen.png",
-    "desktopBackground": "https://raw.githubusercontent.com/felipesoarws/v2/main/src/assets/fewe_studio_screen_desk.png",
+    "desktopBackground": "https://raw.githubusercontent.com/felipesoarws/v2/main/src/assets/fewe_studio_screen_desk.jpg",
     "link": "https://fewe.vercel.app"
   }
 ]
