@@ -5,6 +5,7 @@
     "builtWith": ["React", "JavaScript", "SCSS"],
     "desc": "Primeira versão do meu portifólio criado em 2022, baseando-se em uma interface de Mac.",
     "background": "https://raw.githubusercontent.com/felipesoarws/v2/main/public/assets/v1_portifolio_screen.png",
+    "desktopBackground": "https://raw.githubusercontent.com/felipesoarws/v2/main/public/assets/v1_portifolio_screen.png",
     "link": "https://v1-felipesoares-dev.vercel.app"
   },
   {
@@ -21,6 +22,7 @@
     "builtWith": ["React", "JavaScript", "SCSS"],
     "desc": "Landing Page criada baseada no God of War: Ragnarök, com elaboração de carrossel de galeria e com descrições sobre os principais personagens da saga atual.",
     "background": "https://raw.githubusercontent.com/felipesoarws/v2/main/public/assets/gow_screen.png",
+    "desktopBackground": "https://raw.githubusercontent.com/felipesoarws/v2/main/public/assets/gow_screen.png",
     "link": "https://god-of-war-ragnarok-landing-page.vercel.app"
   },
   {
@@ -29,6 +31,7 @@
     "builtWith": ["React", "JavaScript", "SCSS"],
     "desc": "Clone do Google Keep, com funcionalidades de criar tarefas, alternar layout de visualização e marcas taferas ja feitas.",
     "background": "https://raw.githubusercontent.com/felipesoarws/v2/main/public/assets/google_keep_screen.png",
+    "desktopBackground": "https://raw.githubusercontent.com/felipesoarws/v2/main/public/assets/google_keep_screen_desk.png",
     "link": "https://google-keep-clone-dev.vercel.app"
   },
   {
@@ -37,6 +40,7 @@
     "builtWith": ["React", "JavaScript", "SCSS"],
     "desc": "Um website do jogo Valorant, onde pode consultar os agentes do jogo e suas caracteristicas, como também ranks e mapas do jogo, além de suas armas e suas skins.",
     "background": "https://raw.githubusercontent.com/felipesoarws/v2/main/public/assets/vlrhub_screen.png",
+    "desktopBackground": "https://raw.githubusercontent.com/felipesoarws/v2/main/public/assets/vlrhub_screen.png",
     "link": "https://vlrgg.vercel.app"
   },
   {
@@ -45,6 +49,7 @@
     "builtWith": ["HTML", "JavaScript", "SCSS"],
     "desc": "Controle de despesas com ações de registrar despesa ou receita, com calculo automático do saldo restante.",
     "background": "https://raw.githubusercontent.com/felipesoarws/v2/main/public/assets/controle_despesas_screen.png",
+    "desktopBackground": "https://raw.githubusercontent.com/felipesoarws/v2/main/public/assets/controle_despesas_screen.png",
     "link": "https://controle-de-despesas-rust.vercel.app"
   },
   {
@@ -53,6 +58,7 @@
     "builtWith": ["React", "JavaScript", "SCSS"],
     "desc": "Landing Page criada para um studio com propósito de vender serviços de desenvolvimento web.",
     "background": "https://raw.githubusercontent.com/felipesoarws/v2/main/public/assets/fewe_studio_screen.png",
+    "desktopBackground": "https://raw.githubusercontent.com/felipesoarws/v2/main/public/assets/fewe_studio_screen.png",
     "link": "https://fewe.vercel.app"
   }
 ]

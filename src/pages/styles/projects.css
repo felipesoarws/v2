@@ -236,7 +236,7 @@ h5 {
     width: 65vw;
   }
 }
-.slider-container .right-slide > div {
+.slider-container .right-slide > div.mobile {
   height: 100%;
   width: 100%;
   border-left: 2px solid rgba(255, 255, 255, 0.3);
@@ -246,6 +246,33 @@ h5 {
   background-position: left center;
   border-top-left-radius: 1rem;
   border-bottom-left-radius: 1rem;
+  display: block;
+  visibility: visible;
+}
+@media screen and (min-width: 768px) {
+  .slider-container .right-slide > div.mobile {
+    display: none;
+    visibility: hidden;
+  }
+}
+.slider-container .right-slide > div.desktop {
+  display: none;
+  visibility: hidden;
+}
+@media screen and (min-width: 768px) {
+  .slider-container .right-slide > div.desktop {
+    display: block;
+    visibility: visible;
+    height: 100%;
+    width: 100%;
+    border-left: 2px solid rgba(255, 255, 255, 0.3);
+    border-top: 2px solid rgba(255, 255, 255, 0.3);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left center;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+  }
 }
 .slider-container .action-buttons button {
   position: absolute;

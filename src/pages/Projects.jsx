@@ -119,7 +119,14 @@ const Projects = () => {
             <div className="right-slide" ref={slideRightRef}>
               {projectsData.map((p, i) => (
                 <div
-                  className="project-bg"
+                  className="project-bg mobile"
+                  key={i}
+                  style={{ backgroundImage: `url(${p.background})` }}
+                ></div>
+              ))}
+              {projectsData.map((p, i) => (
+                <div
+                  className="project-bg desktop"
                   key={i}
                   style={{ backgroundImage: `url(${p.background})` }}
                 ></div>
