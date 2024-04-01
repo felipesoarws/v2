@@ -1,3 +1,8 @@
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+AOS.init();
+
 import { AiFillCheckSquare } from "react-icons/ai";
 import { BsArrowUpShort } from "react-icons/bs";
 

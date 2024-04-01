@@ -178,6 +178,20 @@ h5 {
     gap: 1vw;
   }
 }
+.slider-container .left-slide .slide-content .slide-stacks .stacks-list {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+.slider-container .left-slide .slide-content .slide-stacks .stacks-list span {
+  background-color: rgba(94, 234, 212, 0.1);
+  color: #64ffda;
+  padding: 0.3rem 0.7rem;
+  border-radius: 0.8rem;
+  font-size: 1rem;
+  margin: 0.4rem 0;
+}
 .slider-container .left-slide .slide-content .slide-stacks .link {
   margin: 0.8rem 0;
 }
@@ -195,9 +209,6 @@ h5 {
   .slider-container .left-slide .slide-content p {
     font-size: 1.1vw;
   }
-}
-.slider-container .left-slide .slide-content span {
-  color: #64ffda;
 }
 .slider-container .left-slide .slide-content a {
   color: white;

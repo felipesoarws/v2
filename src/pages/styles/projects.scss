@@ -189,6 +189,22 @@ h5 {
             gap: 1vw;
           }
 
+          .stacks-list {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 0.5rem;
+
+            span {
+              background-color: rgba(94, 234, 212, 0.1);
+              color: $Green;
+              padding: 0.3rem 0.7rem;
+              border-radius: 0.8rem;
+              font-size: 1rem;
+              margin: 0.4rem 0;
+            }
+          }
+
           .link {
             margin: 0.8rem 0;
 
@@ -209,10 +225,6 @@ h5 {
           @media screen and (min-width: 1024px) {
             font-size: 1.1vw;
           }
-        }
-
-        span {
-          color: $Green;
         }
 
         a {

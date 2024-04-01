@@ -2,6 +2,11 @@ import { Link } from "react-router-dom";
 import { FaAngleDown, FaAngleUp } from "react-icons/fa";
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+AOS.init();
+
 // styles
 import "./styles/projects.css";
 
@@ -72,7 +77,12 @@ const Projects = () => {
       <div className="projects-container">
         <div className="detail projects"></div>
 
-        <div className="title">
+        <div
+          className="title"
+          data-aos="fade-right"
+          data-aos-anchor-placement="top-right"
+          data-aos-duration="2000"
+        >
           <Link to={"/"}>
             <div className="back-menu">
               <BsArrowUpShort />
@@ -84,7 +94,13 @@ const Projects = () => {
 
         <div className="projects">
           <div className="slider-container" ref={sliderContainerRef}>
-            <div className="left-slide" ref={slideLeftRef}>
+            <div
+              className="left-slide"
+              ref={slideLeftRef}
+              data-aos="fade-right"
+              data-aos-anchor-placement="top-right"
+              data-aos-duration="2000"
+            >
               {projectsData.map((p, i) => (
                 <div className="slide" key={i}>
                   <div className="slide-title">
@@ -97,7 +113,11 @@ const Projects = () => {
                     <div className="slide-stacks">
                       <div className="stacks">
                         <p>Feito com:</p>
-                        <span>{p.builtWith.join(", ")}.</span>
+                        <div className="stacks-list">
+                          {p.builtWith.map((item) => (
+                            <span key={item}>{item}</span>
+                          ))}
+                        </div>
                       </div>
 
                       <p>
@@ -116,7 +136,13 @@ const Projects = () => {
               ))}
             </div>
 
-            <div className="right-slide" ref={slideRightRef}>
+            <div
+              className="right-slide"
+              ref={slideRightRef}
+              data-aos="fade-left"
+              data-aos-anchor-placement="top-left"
+              data-aos-duration="2000"
+            >
               {projectsData.map((p, i) => (
                 <div
                   className="project-bg mobile"

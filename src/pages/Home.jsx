@@ -1,6 +1,10 @@
 import { useEffect, useRef, useState } from "react";
 import "../styles/index.css";
 import { Link } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+AOS.init();
 
 import {
   AiOutlineGithub,
@@ -66,7 +70,11 @@ const Home = () => {
       <div className="container">
         <div className="detail container"></div>
         <div className="container-first-sec">
-          <div className="resume">
+          <div
+            className="resume"
+            data-aos="fade-right"
+            data-aos-duration="3000"
+          >
             <h1>Felipe Soares</h1>
             <h3>Desenvolvedor Front-end</h3>
             <p>
@@ -76,19 +84,34 @@ const Home = () => {
           </div>
           <div className="navegation">
             <div className="navegation-item actived" ref={aboutNavItem}>
-              <a href="#" onClick={() => toggleNavClass("about")}>
+              <a
+                href="#"
+                onClick={() => toggleNavClass("about")}
+                data-aos="fade-right"
+                data-aos-duration="1000"
+              >
                 <h1>Sobre</h1>
                 <span></span>
               </a>
             </div>
             <div className="navegation-item" ref={projectsNavItem}>
-              <a href="#projects" onClick={() => toggleNavClass("projects")}>
+              <a
+                href="#projects"
+                onClick={() => toggleNavClass("projects")}
+                data-aos="fade-right"
+                data-aos-duration="2000"
+              >
                 <h1>Projetos</h1>
                 <span></span>
               </a>
             </div>
             <div className="navegation-item" ref={skillsNavItem}>
-              <a href="#skills" onClick={() => toggleNavClass("skills")}>
+              <a
+                href="#skills"
+                onClick={() => toggleNavClass("skills")}
+                data-aos="fade-right"
+                data-aos-duration="3000"
+              >
                 <h1>Skills</h1>
                 <span></span>
               </a>
@@ -117,7 +140,11 @@ const Home = () => {
             <div className="title">
               <h1>Sobre</h1>
             </div>
-            <div className="content">
+            <div
+              className="content"
+              data-aos="fade-left"
+              data-aos-duration="3000"
+            >
               <p>
                 Me chamo Felipe, tenho 21 anos e sou um estudante de programação
                 apaixonado por tecnologia e inovação.

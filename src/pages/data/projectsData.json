@@ -2,7 +2,7 @@
   {
     "year": "2022",
     "project": "Portifólio (v1)",
-    "builtWith": ["React", "JavaScript", "SCSS"],
+    "builtWith": ["React", "SCSS"],
     "desc": "Primeira versão do meu portifólio criado em 2022, baseando-se em uma interface de Mac.",
     "background": "https://raw.githubusercontent.com/felipesoarws/v2/main/public/assets/v1_portifolio_screen.png",
     "desktopBackground": "https://raw.githubusercontent.com/felipesoarws/v2/main/public/assets/v1_portifolio_screen.png",
@@ -19,7 +19,7 @@
   {
     "year": "2022",
     "project": "God of War: Ragnarök",
-    "builtWith": ["React", "JavaScript", "SCSS"],
+    "builtWith": ["React", "SCSS"],
     "desc": "Landing Page criada baseada no God of War: Ragnarök, com elaboração de carrossel de galeria e com descrições sobre os principais personagens da saga atual.",
     "background": "https://raw.githubusercontent.com/felipesoarws/v2/main/public/assets/gow_screen.png",
     "desktopBackground": "https://raw.githubusercontent.com/felipesoarws/v2/main/public/assets/gow_screen.png",
@@ -28,7 +28,7 @@
   {
     "year": "2023",
     "project": "Google Keep - Clone",
-    "builtWith": ["React", "JavaScript", "SCSS"],
+    "builtWith": ["React", "SCSS"],
     "desc": "Clone do Google Keep, com funcionalidades de criar tarefas, alternar layout de visualização e marcas taferas ja feitas.",
     "background": "https://raw.githubusercontent.com/felipesoarws/v2/main/public/assets/google_keep_screen.png",
     "desktopBackground": "https://raw.githubusercontent.com/felipesoarws/v2/main/public/assets/google_keep_screen_desk.png",
@@ -37,7 +37,7 @@
   {
     "year": "2022",
     "project": "Valorant Hub",
-    "builtWith": ["React", "JavaScript", "SCSS"],
+    "builtWith": ["React", "SCSS"],
     "desc": "Um website do jogo Valorant, onde pode consultar os agentes do jogo e suas caracteristicas, como também ranks e mapas do jogo, além de suas armas e suas skins.",
     "background": "https://raw.githubusercontent.com/felipesoarws/v2/main/public/assets/vlrhub_screen.png",
     "desktopBackground": "https://raw.githubusercontent.com/felipesoarws/v2/main/public/assets/vlrhub_screen.png",
@@ -55,7 +55,7 @@
   {
     "year": "2023",
     "project": "FeWe Studio",
-    "builtWith": ["React", "JavaScript", "SCSS"],
+    "builtWith": ["React", "SCSS"],
     "desc": "Landing Page criada para um studio com propósito de vender serviços de desenvolvimento web.",
     "background": "https://raw.githubusercontent.com/felipesoarws/v2/main/public/assets/fewe_studio_screen.png",
     "desktopBackground": "https://raw.githubusercontent.com/felipesoarws/v2/main/public/assets/fewe_studio_screen.png",
