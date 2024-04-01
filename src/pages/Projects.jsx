@@ -83,6 +83,19 @@ const Projects = () => {
         </div>
 
         <div className="projects">
+          <div className="mobile-projects-list">
+            <div className="mobile-projects-list-item">
+              <div className="item-background">
+                {projectsData.map((p, i) => (
+                  <div
+                    className="item-bg-mobile"
+                    key={i}
+                    style={{ backgroundImage: `url(${p.background})` }}
+                  ></div>
+                ))}
+              </div>
+            </div>
+          </div>
           <div className="slider-container" ref={sliderContainerRef}>
             <div
               className="left-slide"
@@ -133,13 +146,6 @@ const Projects = () => {
               data-aos-anchor-placement="top-left"
               data-aos-duration="2000"
             >
-              {projectsData.map((p, i) => (
-                <div
-                  className="project-bg mobile"
-                  key={i}
-                  style={{ backgroundImage: `url(${p.background})` }}
-                ></div>
-              ))}
               {projectsData.map((p, i) => (
                 <div
                   className="project-bg desktop"

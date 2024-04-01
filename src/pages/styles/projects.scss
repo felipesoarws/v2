@@ -24,9 +24,11 @@ h5 {
   font-family: "Inter", sans-serif;
 }
 
-.projects-style {
+body {
   background-color: $Gray;
+}
 
+.projects-style {
   .detail.projects {
     width: 1px;
     height: 1px;
@@ -117,11 +119,50 @@ h5 {
   }
 }
 
+.mobile-projects-list {
+  padding-top: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  visibility: visible;
+
+  @media screen and (min-width: 1024px) {
+    display: none;
+    visibility: hidden;
+  }
+
+  &-item {
+    .item-background {
+      height: 45vw;
+      width: 80vw;
+
+      & > div {
+        height: 100%;
+        width: 100%;
+        border: 2px solid rgba(255, 255, 255, 0.3);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top center;
+        border-radius: 1rem;
+      }
+    }
+  }
+}
+
 .slider-container {
   position: relative;
   overflow: hidden;
   width: 100vw;
   height: 100vh;
+  display: none;
+  visibility: hidden;
+
+  @media screen and (min-width: 1024px) {
+    display: block;
+    visibility: visible;
+  }
 
   .left-slide {
     height: 100vh;
@@ -198,10 +239,10 @@ h5 {
             span {
               background-color: rgba(94, 234, 212, 0.1);
               color: $Green;
-              padding: 0.3rem 0.7rem;
-              border-radius: 0.8rem;
-              font-size: 1rem;
-              margin: 0.4rem 0;
+              padding: 0.3vw 0.7vw;
+              border-radius: 0.8vw;
+              font-size: 1vw;
+              margin: 0.4vw 0;
             }
           }
 
@@ -281,7 +322,7 @@ h5 {
       display: block;
       visibility: visible;
 
-      @media screen and (min-width: 768px) {
+      @media screen and (min-width: 1024px) {
         display: none;
         visibility: hidden;
       }
@@ -291,7 +332,7 @@ h5 {
       display: none;
       visibility: hidden;
 
-      @media screen and (min-width: 768px) {
+      @media screen and (min-width: 1024px) {
         display: block;
         visibility: visible;
         height: 100%;
