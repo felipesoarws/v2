@@ -19,9 +19,9 @@ import { Project } from "../components/Project";
 import { ItemSkill } from "../components/ItemSkill";
 
 // images
-import vlrHub from "../../public/assets/vlrhub_screen.png";
-import gowRagnarok from "../../public/assets/gow_screen.png";
-import v1Portifolio from "../../public/assets/v1_portifolio_screen.png";
+import vlrHub from "../../src/assets/vlrhub_screen.png";
+import gowRagnarok from "../../src/assets/gow_screen.png";
+import v1Portifolio from "../../src/assets/v1_portifolio_screen.png";
 
 const Home = () => {
   document.title = "@felipesoarws | frontend developer";

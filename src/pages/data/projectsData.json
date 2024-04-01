@@ -22,7 +22,7 @@
     "builtWith": ["React", "SCSS"],
     "desc": "Landing Page criada baseada no God of War: Ragnarök, com elaboração de carrossel de galeria e com descrições sobre os principais personagens da saga atual.",
     "background": "https://raw.githubusercontent.com/felipesoarws/v2/main/public/assets/gow_screen.png",
-    "desktopBackground": "https://raw.githubusercontent.com/felipesoarws/v2/main/public/assets/gow_screen_desk.png",
+    "desktopBackground": "../../public/assets/gow_screen_desk.png",
     "link": "https://god-of-war-ragnarok-landing-page.vercel.app"
   },
   {
@@ -31,7 +31,7 @@
     "builtWith": ["React", "SCSS"],
     "desc": "Clone do Google Keep, com funcionalidades de criar tarefas, alternar layout de visualização e marcas taferas ja feitas.",
     "background": "https://raw.githubusercontent.com/felipesoarws/v2/main/public/assets/google_keep_screen.png",
-    "desktopBackground": "https://raw.githubusercontent.com/felipesoarws/v2/main/public/assets/google_keep_screen_desk.png",
+    "desktopBackground": "https://raw.githubusercontent.com/felipesoarws/v2/main/public/assets/gow_screen_desk.png",
     "link": "https://google-keep-clone-dev.vercel.app"
   },
   {
