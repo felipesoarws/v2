@@ -19,16 +19,6 @@ import { BsArrowUpShort } from "react-icons/bs";
 const Projects = () => {
   document.title = "@felipesoarws | projetos";
 
-  projectsData.sort((a, b) => {
-    if (a.year < b.year) {
-      return 1;
-    }
-    if (a.year > b.year) {
-      return -1;
-    }
-    return 0;
-  });
-
   const [sliderContainer, setSliderContainer] = useState();
   const [slideRight, setSlideRight] = useState();
   const [slideLeft, setSlideLeft] = useState();
@@ -154,7 +144,7 @@ const Projects = () => {
                 <div
                   className="project-bg desktop"
                   key={i}
-                  style={{ backgroundImage: `url(${p.background})` }}
+                  style={{ backgroundImage: `url(${p.desktopBackground})` }}
                 ></div>
               ))}
             </div>
