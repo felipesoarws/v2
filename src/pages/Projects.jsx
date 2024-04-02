@@ -85,15 +85,51 @@ const Projects = () => {
         <div className="projects">
           <div className="mobile-projects-list">
             <div className="mobile-projects-list-item">
-              <div className="item-background">
-                {projectsData.map((p, i) => (
+              {projectsData.map((p, i) => (
+                <div className="item" key={i}>
+                  <div className="i-background">
+                    <div
+                      data-aos="fade-up"
+                      data-aos-anchor-placement="top-bottom"
+                      data-aos-duration="2000"
+                      className="i-bg-mobile"
+                      style={{ backgroundImage: `url(${p.background})` }}
+                    ></div>
+                  </div>
                   <div
-                    className="item-bg-mobile"
-                    key={i}
-                    style={{ backgroundImage: `url(${p.background})` }}
-                  ></div>
-                ))}
-              </div>
+                    className="i-content"
+                    data-aos="fade-up"
+                    data-aos-anchor-placement="top-bottom"
+                    data-aos-duration="2000"
+                  >
+                    <div className="i-title">
+                      <h2>{i + 1}</h2>
+                      <h3>{p.project}</h3>
+                    </div>
+                    <div className="i-desc">
+                      <p>{p.desc}</p>
+                    </div>
+                    <div className="i-stacks">
+                      <p>Feito com:</p>
+                      <div className="stacks-list">
+                        {p.builtWith.map((item) => (
+                          <span key={item}>{item}</span>
+                        ))}
+                      </div>
+                    </div>
+                    <div className="i-project-link">
+                      <span className="link">
+                        <a href={p.link} target="_blank">
+                          {" "}
+                          <BsArrowUpShort />
+                          Acesse aqui
+                        </a>
+                        .
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
           <div className="slider-container" ref={sliderContainerRef}>

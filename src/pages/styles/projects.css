@@ -110,8 +110,15 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 2rem;
+  gap: 5rem;
   visibility: visible;
+}
+.mobile-projects-list-item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 2rem;
 }
 @media screen and (min-width: 1024px) {
   .mobile-projects-list {
@@ -119,11 +126,86 @@ body {
     visibility: hidden;
   }
 }
-.mobile-projects-list-item .item-background {
+.mobile-projects-list .item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 1rem;
+}
+.mobile-projects-list .i-content {
+  width: 80vw;
+}
+.mobile-projects-list .i-content .i-title {
+  display: flex;
+  gap: 0.5rem;
+}
+.mobile-projects-list .i-content .i-title h2 {
+  color: white;
+  font-size: 5rem;
+  transform: translateY(-4rem);
+}
+.mobile-projects-list .i-content .i-title h3 {
+  color: white;
+  font-size: 1rem;
+  transform: translateY(-0.5rem);
+}
+.mobile-projects-list .i-content .i-desc {
+  transform: translateY(-4rem);
+}
+.mobile-projects-list .i-content .i-desc p {
+  color: white;
+  font-size: 0.8rem;
+}
+.mobile-projects-list .i-content .i-stacks {
+  display: flex;
+  gap: 0.7rem;
+  transform: translateY(-3rem);
+  flex-wrap: wrap;
+}
+.mobile-projects-list .i-content .i-stacks p {
+  color: white;
+  font-size: 0.9rem;
+}
+.mobile-projects-list .i-content .i-stacks .stacks-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+.mobile-projects-list .i-content .i-stacks .stacks-list span {
+  background-color: rgba(94, 234, 212, 0.1);
+  color: #64ffda;
+  padding: 0.3rem 0.7rem;
+  border-radius: 0.8rem;
+  font-size: 0.9rem;
+}
+.mobile-projects-list .i-content .i-project-link {
+  transform: translateY(-2rem);
+}
+.mobile-projects-list .i-content .i-project-link .link {
+  margin: 0.8rem 0;
+}
+.mobile-projects-list .i-content .i-project-link .link a {
+  color: white;
+  transition: all 0.3s ease-in-out;
+  margin: 0.8rem 0;
+}
+.mobile-projects-list .i-content .i-project-link .link a:hover {
+  color: #64ffda;
+}
+.mobile-projects-list .i-content .i-project-link .link svg {
+  transform: rotate(90deg) translate(0.1rem, 0.2rem);
+  transition: all 0.3s ease-in-out;
+}
+.mobile-projects-list .i-content .i-project-link .link:hover svg {
+  transform: rotate(90deg) translate(0.1rem, 0.1rem);
+}
+.mobile-projects-list .i-background {
   height: 45vw;
   width: 80vw;
 }
-.mobile-projects-list-item .item-background > div {
+.mobile-projects-list .i-background > div {
   height: 100%;
   width: 100%;
   border: 2px solid rgba(255, 255, 255, 0.3);

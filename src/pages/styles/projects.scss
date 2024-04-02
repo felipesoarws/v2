@@ -125,28 +125,125 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 2rem;
+  gap: 5rem;
   visibility: visible;
+
+  &-item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 2rem;
+  }
 
   @media screen and (min-width: 1024px) {
     display: none;
     visibility: hidden;
   }
 
-  &-item {
-    .item-background {
-      height: 45vw;
-      width: 80vw;
+  .item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+  }
 
-      & > div {
-        height: 100%;
-        width: 100%;
-        border: 2px solid rgba(255, 255, 255, 0.3);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: top center;
-        border-radius: 1rem;
+  .i-content {
+    width: 80vw;
+    .i-title {
+      display: flex;
+      gap: 0.5rem;
+
+      h2 {
+        color: white;
+        font-size: 5rem;
+        transform: translateY(-4rem);
       }
+
+      h3 {
+        color: white;
+        font-size: 1rem;
+        transform: translateY(-0.5rem);
+      }
+    }
+
+    .i-desc {
+      transform: translateY(-4rem);
+
+      p {
+        color: white;
+        font-size: 0.8rem;
+      }
+    }
+
+    .i-stacks {
+      display: flex;
+      gap: 0.7rem;
+      transform: translateY(-3rem);
+      flex-wrap: wrap;
+
+      p {
+        color: white;
+        font-size: 0.9rem;
+      }
+
+      .stacks-list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0.5rem;
+
+        span {
+          background-color: rgba(94, 234, 212, 0.1);
+          color: $Green;
+          padding: 0.3rem 0.7rem;
+          border-radius: 0.8rem;
+          font-size: 0.9rem;
+        }
+      }
+    }
+
+    .i-project-link {
+      transform: translateY(-2rem);
+
+      .link {
+        margin: 0.8rem 0;
+
+        a {
+          color: white;
+          transition: all 0.3s ease-in-out;
+          margin: 0.8rem 0;
+
+          &:hover {
+            color: $Green;
+          }
+        }
+
+        svg {
+          transform: rotate(90deg) translate(0.1rem, 0.2rem);
+          transition: all 0.3s ease-in-out;
+        }
+
+        &:hover svg {
+          transform: rotate(90deg) translate(0.1rem, 0.1rem);
+        }
+      }
+    }
+  }
+
+  .i-background {
+    height: 45vw;
+    width: 80vw;
+
+    & > div {
+      height: 100%;
+      width: 100%;
+      border: 2px solid rgba(255, 255, 255, 0.3);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: top center;
+      border-radius: 1rem;
     }
   }
 }
