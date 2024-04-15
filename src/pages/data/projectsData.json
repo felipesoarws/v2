@@ -61,5 +61,14 @@
     "background": "https://raw.githubusercontent.com/felipesoarws/v2/main/src/assets/fewe_studio_screen_mobile.jpg",
     "desktopBackground": "https://raw.githubusercontent.com/felipesoarws/v2/main/src/assets/fewe_studio_screen_desk.jpg",
     "link": "https://fewe.vercel.app"
+  },
+  {
+    "year": "2024",
+    "project": "Netflix Clone",
+    "builtWith": ["React", "SCSS", "Firebase"],
+    "desc": "Clone do Streaming Netflix com opção de criação de contas para salvar seus filmes favoritos sem perder o histórico.",
+    "background": "https://raw.githubusercontent.com/felipesoarws/v2/main/src/assets/clone_netflix_screen_mobile.jpg",
+    "desktopBackground": "https://raw.githubusercontent.com/felipesoarws/v2/main/src/assets/clone_netflix_screen_desk.jpg",
+    "link": "https://netflix-clone-react-js-13c9e.web.app/"
   }
 ]
