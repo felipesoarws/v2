@@ -1,6 +1,4 @@
-import { Link } from "react-router-dom";
-import { FaAngleDown, FaAngleUp } from "react-icons/fa";
-import { useEffect, useLayoutEffect, useRef, useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -8,58 +6,41 @@ import "aos/dist/aos.css";
 AOS.init();
 
 // styles
-import "./styles/projects.css";
+import "./styles/projects.scss";
+import "./styles/projectsDesktop.scss";
 
 //imports
 import projectsData from "./data/projectsData.json";
 
 // icons
-import { BsArrowUpShort } from "react-icons/bs";
+import { BsArrowUpShort, BsArrowRight } from "react-icons/bs";
 
 const Projects = () => {
   document.title = "@felipesoarws | projetos";
 
-  const [sliderContainer, setSliderContainer] = useState();
-  const [slideRight, setSlideRight] = useState();
-  const [slideLeft, setSlideLeft] = useState();
+  const navigate = useNavigate();
 
-  const sliderContainerRef = useRef(null);
-  const slideRightRef = useRef(null);
-  const slideLeftRef = useRef(null);
-  const slidesLenght = projectsData.length;
+  const getData = (project) => {
+    navigate(`/projects/${project.pathName}`, { state: project });
+  };
 
-  useLayoutEffect(() => {
-    setSliderContainer(sliderContainerRef.current);
-    setSlideLeft(slideLeftRef.current);
-    setSlideRight(slideRightRef.current);
-  });
+  const onEnterHoverLink = (linkEvent) => {
+    let hoverReveal = linkEvent.currentTarget.children[2];
+    let image = linkEvent.currentTarget.children[2].children[0];
 
-  let activeSlideIndex = 0;
+    hoverReveal.style.opacity = 1;
+    hoverReveal.style.transform = `translate(-100%, -50% ) rotate(5deg)`;
+    image.style.transform = "scale(1,1)";
+    hoverReveal.style.left = `${linkEvent.clientX}px`;
+  };
 
-  const changeSlide = (direction) => {
-    slideLeft.style.top = `-${slidesLenght - 1 * 100}vh`;
+  const onLeaveHoverLink = (linkEvent) => {
+    let hoverReveal = linkEvent.currentTarget.children[2];
+    let image = linkEvent.currentTarget.children[2].children[0];
 
-    const sliderHeight = sliderContainer.clientHeight;
-
-    if (direction == "up") {
-      activeSlideIndex++;
-      if (activeSlideIndex > slidesLenght - 1) {
-        activeSlideIndex = 0;
-      }
-    } else if (direction == "down") {
-      activeSlideIndex--;
-      if (activeSlideIndex < 0) {
-        activeSlideIndex = slidesLenght - 1;
-      }
-    }
-
-    slideRight.style.transform = `translateY(-${
-      activeSlideIndex * sliderHeight
-    }px)`;
-
-    slideLeft.style.transform = `translateY(-${
-      activeSlideIndex * sliderHeight
-    }px)`;
+    hoverReveal.style.opacity = 0;
+    hoverReveal.style.transform = `translate(-100%, -50% ) rotate(5deg)`;
+    image.style.transform = "scale(0.8, 0.8)";
   };
 
   return (
@@ -93,7 +74,7 @@ const Projects = () => {
                       data-aos-anchor-placement="top-bottom"
                       data-aos-duration="2000"
                       className="i-bg-mobile"
-                      style={{ backgroundImage: `url(${p.background})` }}
+                      style={{ backgroundImage: `url(${p.mobileBackground})` }}
                     ></div>
                   </div>
                   <div
@@ -112,8 +93,8 @@ const Projects = () => {
                     <div className="i-stacks">
                       <p>Feito com:</p>
                       <div className="stacks-list">
-                        {p.builtWith.map((item) => (
-                          <span key={item}>{item}</span>
+                        {p.builtWith.map((item, id) => (
+                          <span key={id}>{item}</span>
                         ))}
                       </div>
                     </div>
@@ -132,73 +113,30 @@ const Projects = () => {
               ))}
             </div>
           </div>
-          <div className="slider-container" ref={sliderContainerRef}>
-            <div
-              className="left-slide"
-              ref={slideLeftRef}
-              data-aos="fade-right"
-              data-aos-anchor-placement="top-right"
-              data-aos-duration="2000"
-            >
-              {projectsData.map((p, i) => (
-                <div className="slide" key={i}>
-                  <div className="slide-title">
-                    <h1>{i + 1}.</h1>
-                    <h2>{p.project}</h2>
-                  </div>
-                  <div className="slide-content">
-                    <p>{p.desc}</p>
-
-                    <div className="slide-stacks">
-                      <div className="stacks">
-                        <p>Feito com:</p>
-                        <div className="stacks-list">
-                          {p.builtWith.map((item) => (
-                            <span key={item}>{item}</span>
-                          ))}
-                        </div>
+          <div className="desktop-projects-list">
+            <nav>
+              <ul>
+                {projectsData.map((p, i) => (
+                  <li key={i} onClick={() => getData(p)}>
+                    <div
+                      className="link"
+                      onMouseEnter={(e) => onEnterHoverLink(e)}
+                      onMouseLeave={(e) => onLeaveHoverLink(e)}
+                    >
+                      <span>{p.project}</span>
+                      <BsArrowRight />
+                      <div className="hover-reveal image01">
+                        <img
+                          className="hidden-img"
+                          src={p.previewBackground}
+                          alt={`${p.project} image`}
+                        />
                       </div>
-
-                      <p>
-                        <span className="link">
-                          <a href={p.link} target="_blank">
-                            {" "}
-                            <BsArrowUpShort />
-                            Acesse aqui
-                          </a>
-                          .
-                        </span>
-                      </p>
                     </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            <div
-              className="right-slide"
-              ref={slideRightRef}
-              data-aos="fade-left"
-              data-aos-anchor-placement="top-left"
-              data-aos-duration="2000"
-            >
-              {projectsData.map((p, i) => (
-                <div
-                  className="project-bg desktop"
-                  key={i}
-                  style={{ backgroundImage: `url(${p.desktopBackground})` }}
-                ></div>
-              ))}
-            </div>
-
-            <div className="action-buttons">
-              <button className="down-button" onClick={() => changeSlide("up")}>
-                <FaAngleDown />
-              </button>
-              <button className="up-button" onClick={() => changeSlide("down")}>
-                <FaAngleUp />
-              </button>
-            </div>
+                  </li>
+                ))}
+              </ul>
+            </nav>
           </div>
         </div>
       </div>

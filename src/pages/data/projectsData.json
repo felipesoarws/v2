@@ -1,74 +1,106 @@
 [
   {
     "year": "2022",
+    "pathName": "portifolio-v1",
     "project": "Portifólio (v1)",
     "builtWith": ["React", "SCSS"],
     "desc": "Primeira versão do meu portifólio criado em 2022, baseando-se em uma interface de Mac.",
-    "background": "https://raw.githubusercontent.com/felipesoarws/v2/main/src/assets/v1_portifolio_screen_mobile.jpg",
+    "mobileBackground": "https://raw.githubusercontent.com/felipesoarws/v2/main/src/assets/v1_portifolio_screen_mobile.jpg",
+    "previewBackground": "https://raw.githubusercontent.com/felipesoarws/v2/main/src/assets/v1_portifolio_screen_preview.png",
     "desktopBackground": "https://raw.githubusercontent.com/felipesoarws/v2/main/src/assets/v1_portifolio_screen_desk.jpg",
-    "link": "https://v1-felipesoares-dev.vercel.app"
+    "repository": "https://github.com/felipesoarws/v1",
+    "link": "https://v1-felipesoares-dev.vercel.app",
+    "projectType": "Pessoal"
   },
   {
     "year": "2022",
+    "pathName": "todo",
     "project": "ToDo",
     "builtWith": ["HTML", "JavaScript", "SCSS"],
     "desc": "Um projeto de criar tafefas, com opção de selecionar as ja feitas e apagar as selecionadas.",
-    "background": "https://raw.githubusercontent.com/felipesoarws/v2/main/src/assets/todoapp_screen_mobile.jpg",
+    "mobileBackground": "https://raw.githubusercontent.com/felipesoarws/v2/main/src/assets/todoapp_screen_mobile.jpg",
+    "previewBackground": "https://raw.githubusercontent.com/felipesoarws/v2/main/src/assets/todoapp_screen_preview.png",
     "desktopBackground": "https://raw.githubusercontent.com/felipesoarws/v2/main/src/assets/todoapp_screen_desk.jpg",
-    "link": "https://to-do-app-blue.vercel.app/"
+    "repository": "",
+    "link": "https://to-do-app-blue.vercel.app/",
+    "projectType": "Pessoal"
   },
   {
     "year": "2022",
+    "pathName": "god-of-war-ragnarok",
     "project": "God of War: Ragnarök",
     "builtWith": ["React", "SCSS"],
     "desc": "Landing Page criada baseada no God of War: Ragnarök, com elaboração de carrossel de galeria e com descrições sobre os principais personagens da saga atual.",
-    "background": "https://raw.githubusercontent.com/felipesoarws/v2/main/src/assets/gow_screen_mobile.jpg",
+    "mobileBackground": "https://raw.githubusercontent.com/felipesoarws/v2/main/src/assets/gow_screen_mobile.jpg",
+    "previewBackground": "https://raw.githubusercontent.com/felipesoarws/v2/main/src/assets/gow_screen_preview.png",
     "desktopBackground": "https://raw.githubusercontent.com/felipesoarws/v2/main/src/assets/gow_screen_desk.jpg",
-    "link": "https://god-of-war-ragnarok-landing-page.vercel.app"
+    "repository": "https://github.com/felipesoarws/god-of-war-ragnarok-landing-page",
+    "link": "https://god-of-war-ragnarok-landing-page.vercel.app",
+    "projectType": "Pessoal"
   },
   {
     "year": "2023",
+    "pathName": "google-keep-clone",
     "project": "Google Keep - Clone",
     "builtWith": ["React", "SCSS"],
     "desc": "Clone do Google Keep, com funcionalidades de criar tarefas, alternar layout de visualização e marcas taferas ja feitas.",
-    "background": "https://raw.githubusercontent.com/felipesoarws/v2/main/src/assets/google_keep_screen_mobile.jpg",
+    "mobileBackground": "https://raw.githubusercontent.com/felipesoarws/v2/main/src/assets/google_keep_screen_mobile.jpg",
+    "previewBackground": "https://raw.githubusercontent.com/felipesoarws/v2/main/src/assets/google_keep_screen_preview.png",
     "desktopBackground": "https://raw.githubusercontent.com/felipesoarws/v2/main/src/assets/google_keep_screen_desk.jpg",
-    "link": "https://google-keep-clone-dev.vercel.app"
+    "repository": "https://github.com/felipesoarws/google-keep-clone",
+    "link": "https://google-keep-clone-dev.vercel.app",
+    "projectType": "Clone"
   },
   {
     "year": "2022",
+    "pathName": "valorant-hub",
     "project": "Valorant Hub",
     "builtWith": ["React", "SCSS"],
     "desc": "Um website do jogo Valorant, onde pode consultar os agentes do jogo e suas caracteristicas, como também ranks e mapas do jogo, além de suas armas e suas skins.",
-    "background": "https://raw.githubusercontent.com/felipesoarws/v2/main/src/assets/vlrhub_screen_mobile.jpg",
+    "mobileBackground": "https://raw.githubusercontent.com/felipesoarws/v2/main/src/assets/vlrhub_screen_mobile.jpg",
+    "previewBackground": "https://raw.githubusercontent.com/felipesoarws/v2/main/src/assets/vlrhub_screen_preview.png",
     "desktopBackground": "https://raw.githubusercontent.com/felipesoarws/v2/main/src/assets/vlrhub_screen_desk.jpg",
-    "link": "https://vlrgg.vercel.app"
+    "repository": "https://github.com/felipesoarws/valorant-hub",
+    "link": "https://vlrgg.vercel.app",
+    "projectType": "Pessoal"
   },
   {
     "year": "2023",
+    "pathName": "german-audio",
     "project": "German Audio",
     "builtWith": ["goDaddy", "HTML", "SCSS"],
     "desc": "Criação e costumização da página da German Áudio, utilizando ferramentas do goDaddy e também scrips próprios de HTML e sCSS para layout mais alinhado com a ideia do cliente.",
-    "background": "https://raw.githubusercontent.com/felipesoarws/v2/main/src/assets/german_screen_mobile.jpg",
+    "mobileBackground": "https://raw.githubusercontent.com/felipesoarws/v2/main/src/assets/german_screen_mobile.jpg",
+    "previewBackground": "https://raw.githubusercontent.com/felipesoarws/v2/main/src/assets/german_screen_preview.png",
     "desktopBackground": "https://raw.githubusercontent.com/felipesoarws/v2/main/src/assets/german_screen_desk.jpg",
-    "link": "https://germanaudio.com.br/"
+    "repository": "",
+    "link": "https://germanaudio.com.br/",
+    "projectType": "Freelancer"
   },
   {
     "year": "2023",
+    "pathName": "fewe-studio",
     "project": "FeWe Studio",
     "builtWith": ["React", "SCSS"],
     "desc": "Landing Page criada para um studio com propósito de vender serviços de desenvolvimento web.",
-    "background": "https://raw.githubusercontent.com/felipesoarws/v2/main/src/assets/fewe_studio_screen_mobile.jpg",
+    "mobileBackground": "https://raw.githubusercontent.com/felipesoarws/v2/main/src/assets/fewe_studio_screen_mobile.jpg",
+    "previewBackground": "https://raw.githubusercontent.com/felipesoarws/v2/main/src/assets/fewe_studio_screen_preview.png",
     "desktopBackground": "https://raw.githubusercontent.com/felipesoarws/v2/main/src/assets/fewe_studio_screen_desk.jpg",
-    "link": "https://fewe.vercel.app"
+    "repository": "https://github.com/felipesoarws/FeWeStudio",
+    "link": "https://fewe.vercel.app",
+    "projectType": "Pessoal"
   },
   {
     "year": "2024",
-    "project": "Netflix Clone",
+    "pathName": "netflix-clone",
+    "project": "Netflix  - Clone",
     "builtWith": ["React", "SCSS", "Firebase"],
     "desc": "Clone do Streaming Netflix com opção de criação de contas para salvar seus filmes favoritos sem perder o histórico.",
-    "background": "https://raw.githubusercontent.com/felipesoarws/v2/main/src/assets/clone_netflix_screen_mobile.jpg",
+    "mobileBackground": "https://raw.githubusercontent.com/felipesoarws/v2/main/src/assets/clone_netflix_screen_mobile.jpg",
+    "previewBackground": "https://raw.githubusercontent.com/felipesoarws/v2/main/src/assets/clone_netflix_screen_preview.png",
     "desktopBackground": "https://raw.githubusercontent.com/felipesoarws/v2/main/src/assets/clone_netflix_screen_desk.jpg",
-    "link": "https://netflix-clone-react-js-13c9e.web.app/"
+    "repository": "https://github.com/felipesoarws/netflix-clone",
+    "link": "https://netflix-clone-react-js-13c9e.web.app/",
+    "projectType": "Clone"
   }
 ]

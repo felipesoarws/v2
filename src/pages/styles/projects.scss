@@ -14,6 +14,16 @@ $Light-Gray: rgba(122, 129, 151, 0.1);
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  @media screen and (min-width: 1024px) {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+  }
+
+  ::before,
+  *::after {
+    box-sizing: inherit;
+  }
 }
 
 h1,
@@ -61,6 +71,12 @@ body {
     z-index: 100;
     top: 2rem;
     left: 2rem;
+
+    @media (min-width: 1024px) {
+      top: 4rem;
+      left: 4rem;
+      position: absolute;
+    }
 
     h1 {
       font-size: 6vw;
@@ -121,12 +137,17 @@ body {
 
 .mobile-projects-list {
   padding-top: 5rem;
-  display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   gap: 5rem;
+  display: flex;
   visibility: visible;
+
+  @media screen and (min-width: 1024px) {
+    display: none;
+    visibility: hidden;
+  }
 
   &-item {
     display: flex;
@@ -134,11 +155,6 @@ body {
     justify-content: flex-start;
     flex-direction: column;
     gap: 2rem;
-  }
-
-  @media screen and (min-width: 1024px) {
-    display: none;
-    visibility: hidden;
   }
 
   .item {
@@ -248,253 +264,12 @@ body {
   }
 }
 
-.slider-container {
-  position: relative;
-  overflow: hidden;
-  width: 100vw;
-  height: 100vh;
+.desktop-projects-list {
   display: none;
   visibility: hidden;
 
   @media screen and (min-width: 1024px) {
     display: block;
     visibility: visible;
-  }
-
-  .left-slide {
-    height: 100vh;
-    width: 60%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: all 0.3s ease-in-out;
-
-    @media screen and (min-width: 768px) {
-      width: 48%;
-    }
-
-    @media screen and (min-width: 1024px) {
-      width: 30vw;
-    }
-
-    .slide {
-      display: flex;
-      align-items: flex-start;
-      flex-direction: column;
-      margin: 0.8rem 1rem 0.8rem 1rem;
-      transform: translateY(-3rem);
-
-      @media screen and (min-width: 768px) {
-        margin: 0.8rem 5rem 0.8rem 2rem;
-      }
-
-      @media screen and (min-width: 1024px) {
-        margin: 0.8vw 5vw 0.8vw 2vw;
-      }
-
-      &-title {
-        h1 {
-          font-size: 6rem;
-
-          @media screen and (min-width: 1024px) {
-            font-size: 7vw;
-          }
-        }
-
-        h2 {
-          font-size: 0.9rem;
-
-          @media screen and (min-width: 1024px) {
-            font-size: 1.8vw;
-          }
-        }
-      }
-
-      &-content {
-        display: flex;
-        align-items: flex-start;
-        flex-direction: column;
-        margin: 2rem 2rem 0.7rem 0;
-
-        .slide-stacks {
-          margin: 1.5rem 0;
-          display: flex;
-          flex-direction: column;
-          gap: 1rem;
-
-          @media screen and (min-width: 1024px) {
-            margin: 1.5vw 0;
-            gap: 1vw;
-          }
-
-          .stacks-list {
-            display: flex;
-            align-items: flex-start;
-            justify-content: space-between;
-            gap: 0.5rem;
-
-            span {
-              background-color: rgba(94, 234, 212, 0.1);
-              color: $Green;
-              padding: 0.3vw 0.7vw;
-              border-radius: 0.8vw;
-              font-size: 1vw;
-              margin: 0.4vw 0;
-            }
-          }
-
-          .link {
-            margin: 0.8rem 0;
-
-            svg {
-              transform: rotate(90deg) translate(0.1rem, 0.2rem);
-              transition: all 0.3s ease-in-out;
-            }
-
-            &:hover svg {
-              transform: rotate(90deg) translate(0.1rem, 0.1rem);
-            }
-          }
-        }
-
-        p {
-          font-size: 0.8rem;
-
-          @media screen and (min-width: 1024px) {
-            font-size: 1.1vw;
-          }
-        }
-
-        a {
-          color: white;
-          transition: all 0.3s ease-in-out;
-          margin: 0.8rem 0;
-
-          &:hover {
-            color: $Green;
-          }
-        }
-      }
-    }
-
-    & > div {
-      height: 100%;
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      color: white;
-    }
-  }
-
-  .right-slide {
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 60%;
-    width: 40%;
-    transition: all 0.3s ease-in-out;
-
-    @media screen and (min-width: 768px) {
-      left: 50%;
-      width: 50%;
-    }
-
-    @media screen and (min-width: 1024px) {
-      left: 35vw;
-      width: 65vw;
-    }
-
-    & > div.mobile {
-      height: 100%;
-      width: 100%;
-      border-left: 2px solid rgba(255, 255, 255, 0.3);
-      border-top: 2px solid rgba(255, 255, 255, 0.3);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: left center;
-      border-top-left-radius: 1rem;
-      border-bottom-left-radius: 1rem;
-      display: block;
-      visibility: visible;
-
-      @media screen and (min-width: 1024px) {
-        display: none;
-        visibility: hidden;
-      }
-    }
-
-    & > div.desktop {
-      display: none;
-      visibility: hidden;
-
-      @media screen and (min-width: 1024px) {
-        display: block;
-        visibility: visible;
-        height: 100%;
-        width: 100%;
-        border-left: 2px solid rgba(255, 255, 255, 0.3);
-        border-top: 2px solid rgba(255, 255, 255, 0.3);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: left center;
-        border-top-left-radius: 1rem;
-        border-bottom-left-radius: 1rem;
-      }
-    }
-  }
-
-  .action-buttons {
-    button {
-      position: absolute;
-      left: 60%;
-      top: 60%;
-      z-index: 100;
-      background-color: rgba(255, 255, 255, 0.61);
-      border: 0;
-      color: $Gray;
-      cursor: pointer;
-      padding: 0.5rem;
-      transition: all 0.3s ease-in-out;
-
-      @media screen and (min-width: 768px) {
-        left: 50%;
-      }
-
-      @media screen and (min-width: 1024px) {
-        left: 35vw;
-      }
-
-      svg {
-        font-size: 0.9rem;
-
-        @media screen and (min-width: 1024px) {
-          font-size: 1.3vw;
-        }
-      }
-
-      &:hover {
-        color: #222;
-        background-color: white;
-      }
-
-      &:focus {
-        outline: none;
-      }
-    }
-
-    .down-button {
-      transform: translateX(-100%);
-      border-top-left-radius: 0.7rem;
-      border-bottom-left-radius: 0.7rem;
-    }
-
-    .up-button {
-      transform: translateY(-100%);
-      border-top-right-radius: 0.7rem;
-      border-bottom-right-radius: 0.7rem;
-      border: 1px solid black;
-    }
   }
 }

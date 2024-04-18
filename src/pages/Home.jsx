@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import "../styles/index.css";
+import "../styles/index.scss";
 import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";

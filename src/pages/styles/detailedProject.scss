@@ -1,0 +1,248 @@
+$Gray: #0f0f0f;
+$Light-Navy: #202020;
+$Navy: #112240;
+$Lightest-Navy: #e6f1ff;
+$Slate: #d1d5e0;
+$Light-Slate: #656c81;
+$White: #ffffff;
+$Green: #64ffda;
+$Light-Gray: rgba(122, 129, 151, 0.1);
+
+.dp-container {
+  margin: 5rem 0;
+  @media screen and (min-width: 1024px) {
+    margin: 2vw;
+  }
+
+  .title {
+    position: fixed;
+    z-index: 100;
+    top: 2rem;
+    left: 2rem;
+
+    @media (min-width: 1024px) {
+      top: 3.5vw;
+      left: 3vw;
+      position: absolute;
+    }
+
+    .back-menu {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 0.2rem;
+      margin-bottom: 1rem;
+      cursor: pointer;
+      width: 10rem;
+
+      @media (min-width: 1024px) {
+        width: 9vw;
+        gap: 0.2vw;
+        margin-bottom: 1vw;
+      }
+
+      &:hover > svg {
+        transform: rotate(-90deg) translateY(-0.5rem);
+      }
+
+      svg {
+        font-size: 0.9rem;
+        transform: rotate(-90deg) translateX(0rem);
+        transition: all 0.3s ease-in-out;
+
+        @media (min-width: 1024px) {
+          font-size: 1.2vw;
+        }
+      }
+
+      h2 {
+        font-size: 0.9rem;
+
+        @media (min-width: 1024px) {
+          font-size: 1vw;
+        }
+      }
+
+      h2,
+      svg {
+        color: $Green;
+      }
+    }
+  }
+
+  .project {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    @media screen and (min-width: 1024px) {
+      flex-direction: row;
+      gap: 3vw;
+    }
+
+    &-background,
+    &-content {
+      width: 80vw;
+      height: 50vh;
+
+      @media screen and (min-width: 1024px) {
+        width: 50vw;
+        height: 88vh;
+      }
+    }
+
+    &-background {
+      position: relative;
+      border-radius: 2vw;
+
+      .bg {
+        overflow: hidden;
+        border-radius: 2vw;
+
+        img {
+          height: 50vh;
+          object-fit: cover;
+          transform: scale(1.5) translateX(3.5vw);
+
+          @media screen and (min-width: 1024px) {
+            height: 90vh;
+            border-radius: 2vw;
+          }
+        }
+      }
+
+      span {
+        position: absolute;
+        background-color: $Green;
+        color: $Gray;
+        font-size: 1rem;
+        padding: 0.3rem 1rem;
+        border-radius: 4rem;
+        top: 0;
+        right: -1.5rem;
+
+        @media screen and (min-width: 1024px) {
+          font-size: 1vw;
+          padding: 0.3vw 1.5vw;
+          border-radius: 4vw;
+          top: 0;
+          right: -2vw;
+        }
+      }
+    }
+
+    &-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      margin-top: 3rem;
+      gap: 0.8rem;
+
+      @media screen and (min-width: 1024px) {
+        text-align: left;
+        align-items: flex-start;
+        gap: 0.6vw;
+      }
+
+      h1 {
+        color: $Lightest-Navy;
+        font-size: 2rem;
+
+        @media screen and (min-width: 1024px) {
+          font-size: 4.3vw;
+        }
+      }
+
+      p {
+        color: $White;
+        font-size: 0.9rem;
+
+        @media screen and (min-width: 1024px) {
+          font-size: 1vw;
+          width: 37vw;
+        }
+      }
+
+      .stacks {
+        margin: 1rem 0;
+
+        @media screen and (min-width: 1024px) {
+          margin: 1.5vw 0;
+        }
+
+        h2 {
+          color: $Lightest-Navy;
+
+          @media screen and (min-width: 1024px) {
+            font-size: 1.5vw;
+          }
+        }
+
+        .stacks-list {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 1rem;
+
+          @media screen and (min-width: 1024px) {
+            gap: 0.6vw;
+          }
+
+          span {
+            background-color: rgba(94, 234, 212, 0.1);
+            color: $Green;
+            padding: 0.3rem 0.7rem;
+            border-radius: 0.8rem;
+            font-size: 1rem;
+            margin: 1rem 0;
+
+            @media screen and (min-width: 1024px) {
+              margin: 0.8vw 0;
+              padding: 0.3vw 0.7vw;
+              border-radius: 0.8vw;
+              font-size: 1vw;
+            }
+          }
+        }
+      }
+
+      .links {
+        h2 {
+          color: $Lightest-Navy;
+
+          @media screen and (min-width: 1024px) {
+            font-size: 1.5vw;
+          }
+        }
+
+        a,
+        span {
+          font-size: 1rem;
+          margin: 1rem 0;
+          display: block;
+          transition: all 0.3s ease-in-out;
+          color: $Light-Slate;
+
+          @media screen and (min-width: 1024px) {
+            margin: 0.8vw 0;
+            font-size: 1vw;
+          }
+        }
+
+        a {
+          &:hover {
+            color: $Green;
+          }
+        }
+
+        &-list {
+          display: flex;
+          gap: 2rem;
+        }
+      }
+    }
+  }
+}
