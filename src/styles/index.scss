@@ -404,6 +404,13 @@ body {
               color: $Green;
               font-weight: 500;
 
+              @media (min-width: 1024px) {
+                font-size: 1vw;
+               
+              }
+                 
+              
+
               &::selection {
                 background: $White;
                 color: $Gray;
