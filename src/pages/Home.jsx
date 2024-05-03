@@ -232,6 +232,7 @@ const Home = () => {
                   "HTML",
                   "CSS",
                   "SCSS",
+                  "Tailwind CSS",
                   "JavaScript",
                   "ReactJS",
                   "ViteJS",
@@ -265,7 +266,7 @@ const Home = () => {
               />
               <ItemSkill
                 stack={"Estudando atualmente"}
-                skills={["React Native", "ReactJS"]}
+                skills={["React Native", "ReactJS", "Tailwind CSS"]}
                 skillProgress={"studying"}
               />
             </div>
