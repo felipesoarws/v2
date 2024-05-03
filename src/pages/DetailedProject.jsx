@@ -51,9 +51,13 @@ const DetailedProject = () => {
           <div className="links">
             <h2>Links</h2>
             <div className="links-list">
-              <a target="_blank" href={project.link}>
-                Veja o projeto
-              </a>
+            
+              {project.link && (
+                <a target="_blank" href={project.link}>
+                  Veja o projeto
+                </a>
+              )}
+              
               {project.repository && <span>//</span>}
 
               {project.repository && (
