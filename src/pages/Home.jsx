@@ -191,7 +191,7 @@ const Home = () => {
                 }
                 link={"https://brasileirao-simulador.vercel.app/"}
                 image={brasileiraoSimulador}
-                stacks={["React", "SCSS"}
+                stacks={["React", "SCSS"]}
               />
 
               <Project
