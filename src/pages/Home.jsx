@@ -20,7 +20,7 @@ import { ItemSkill } from "../components/ItemSkill";
 
 // images
 import vlrHub from "../../src/assets/vlrhub_screen.png";
-import gowRagnarok from "../../src/assets/gow_screen.png";
+import v1Portifolio from "../../src/assets/v1_portifolio_screen.png";
 import brasileiraoSimulador from "../../src/assets/brasileirao_simulador_screen.png";
 
 const Home = () => {
