@@ -21,7 +21,7 @@ import { ItemSkill } from "../components/ItemSkill";
 // images
 import vlrHub from "../../src/assets/vlrhub_screen.png";
 import gowRagnarok from "../../src/assets/gow_screen.png";
-import v1Portifolio from "../../src/assets/v1_portifolio_screen.png";
+import brasileiraoSimulador from "../../src/assets/brasileirao_simulador_screen.png";
 
 const Home = () => {
   document.title = "@felipesoarws | frontend developer";
@@ -185,13 +185,13 @@ const Home = () => {
                 stacks={["React", "SCSS", "JavaScript"]}
               />
               <Project
-                name={"God of War: Ragnarök"}
+                name={"Simulador do Brasileirão"}
                 desc={
-                  "Landing Page criada baseada no novo God of War: Ragnarök, com elaboração de carrossel de galeria e com descrições sobre alguns dos principais personagens da saga atual."
+                  "Projeto criado baseado no simulador de resultados do campeonato brasileiro do Globo Esporte."
                 }
-                link={"https://god-of-war-ragnarok-landing-page.vercel.app/"}
-                image={gowRagnarok}
-                stacks={["HTML", "SCSS", "JavaScript"]}
+                link={"https://brasileirao-simulador.vercel.app/"}
+                image={brasileiraoSimulador}
+                stacks={["React", "SCSS"}
               />
 
               <Project
@@ -201,7 +201,7 @@ const Home = () => {
                 }
                 link={"https://v1-felipesoares-dev.vercel.app/"}
                 image={v1Portifolio}
-                stacks={["React", "SCSS", "JavaScript"]}
+                stacks={["React", "SCSS"]}
               />
 
               <div className="all-projects">
